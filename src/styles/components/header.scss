@@ -1,3 +1,15 @@
 .header {
+  &-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__logo {
+      color: orange;
+    }
 
+    &__user {
+      display: flex;
+      align-items: center;
+    }
+  }
 }
