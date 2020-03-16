@@ -1,8 +1,8 @@
 .header {
   &-banner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    //display: flex;
+    //align-items: center;
+    //justify-content: space-between;
     &__logo {
       color: orange;
     }
@@ -10,6 +10,24 @@
     &__user {
       display: flex;
       align-items: center;
+      position: relative;
+
+      a {
+        padding: 20px;
+        padding-right: 40px;
+        position: relative;
+        font-weight: bold;
+
+        &:after {
+          content: "";
+          display: block;
+          position: absolute;
+          @include png-sprite($icon-intersect);
+          right: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
     }
   }
 }
