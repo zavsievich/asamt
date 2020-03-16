@@ -364,6 +364,40 @@ svg {
 .header-banner__logo {
   color: orange; }
 
+.header-banner__search {
+  position: relative; }
+  .header-banner__search-input {
+    position: relative;
+    width: 500px;
+    height: 44px;
+    font-size: 14px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.3);
+    border: 2px solid orange;
+    -webkit-border-radius: 9px;
+            border-radius: 9px;
+    padding-left: 45px; }
+    .header-banner__search-input:before {
+      content: "";
+      display: block;
+      background-image: url("../images/png_sprite/sprite.png");
+      background-position: 0px 0px;
+      width: 19px;
+      height: 19px; }
+  .header-banner__search-label {
+    position: absolute;
+    background-image: url("../images/png_sprite/sprite.png");
+    background-position: 0px 0px;
+    width: 19px;
+    height: 19px;
+    width: 19px;
+    height: 19px;
+    left: 13px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+
 .header-banner__user {
   display: -webkit-box;
   display: -webkit-flex;
@@ -384,7 +418,7 @@ svg {
       display: block;
       position: absolute;
       background-image: url("../images/png_sprite/sprite.png");
-      background-position: 0px 0px;
+      background-position: -19px 0px;
       width: 13px;
       height: 9px;
       right: 0;

@@ -7,6 +7,39 @@
       color: orange;
     }
 
+    &__search {
+      position: relative;
+
+      &-input {
+        position: relative;
+        width: 500px;
+        height: 44px;
+        font-size: 14px;
+        line-height: 19px;
+        color: rgba(0, 0, 0, 0.3);
+        border: 2px solid orange;
+        border-radius: 9px;
+        padding-left: 45px;
+
+        &:before {
+          content: "";
+          display: block;
+          @include png-sprite($icon-magnifier);
+        }
+      }
+
+      &-label {
+        position: absolute;
+        @include png-sprite($icon-magnifier);
+        width: 19px;
+        height: 19px;
+        left: 13px;
+        top: 50%;
+        transform: translateY(-50%);
+
+      }
+    }
+
     &__user {
       display: flex;
       align-items: center;
