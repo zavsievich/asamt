@@ -607,7 +607,8 @@ svg {
     -webkit-border-radius: 60px;
             border-radius: 60px;
     color: white;
-    padding: 7px 15px 7px 35px; }
+    padding: 7px 15px 7px 35px;
+    cursor: pointer; }
     .header__nav-button:before {
       content: "";
       position: absolute;
