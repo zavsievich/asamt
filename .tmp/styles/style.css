@@ -395,7 +395,8 @@ svg {
   color: #3E3934;
   -webkit-transition: .3s;
   -o-transition: .3s;
-  transition: .3s; }
+  transition: .3s;
+  cursor: pointer; }
   .button:hover, .button:active {
     background: #1D24AB;
     color: white; }
@@ -650,7 +651,12 @@ svg {
     position: relative;
     display: inline-block;
     height: 320px;
-    margin: 20px; }
+    margin: 20px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+    .menu__list :hover {
+      opacity: 0.8; }
     .menu__list:after {
       content: "";
       position: absolute;
@@ -661,7 +667,8 @@ svg {
       top: 50%;
       right: 20px;
       background: #FF8300;
-      border: 2px solid #FFFFFF; }
+      border: 2px solid #FFFFFF;
+      cursor: pointer; }
   .menu__list--glass:after {
     background-image: url("../images/png_sprite/sprite.png");
     background-position: -40px 0px;
@@ -691,7 +698,10 @@ svg {
       -webkit-border-top-left-radius: 5px;
               border-top-left-radius: 5px;
       -webkit-border-top-right-radius: 5px;
-              border-top-right-radius: 5px; }
+              border-top-right-radius: 5px;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
     .menu-item__description {
       -webkit-box-sizing: border-box;
               box-sizing: border-box;

@@ -18,6 +18,11 @@
     display: inline-block;
     height: 320px;
     margin: 20px;
+    transition: .3s;
+
+    :hover {
+      opacity: 0.8;
+    }
 
     &:after {
       content: "";
@@ -29,6 +34,7 @@
       right: 20px;
       background: #FF8300;
       border: 2px solid #FFFFFF;
+      cursor: pointer;
     }
   }
 
@@ -55,6 +61,7 @@
     &__logo {
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
+      transition: .3s;
     }
 
     &__description {
