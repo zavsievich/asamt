@@ -2,9 +2,18 @@
     {% set args = {
         'avatar': '../../images/img/ava.png',
         'button': 'Go!',
-        'name' : 'Robert Singer'
+        'name' : 'Robert Singer',
+        'nav' :
+        [
+            {
+                'icon': '#drop',
+                'link': '#',
+                'title':'Oslo, Norway',
+            }
+        ]
     } %}
 {% endif %}
+
 <header class="header">
     <div class="container">
         <div class="header-banner">
@@ -26,14 +35,20 @@
                 <a class="header__user-name">{{ args.name }}</a>
             </div>
         </div>
-        <nav class="header__nav">
-            <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+    </div>
+    <nav class="header__nav">
+        <div class="container">
+            <ul class="header__nav-list">
+                {% for item in args.nav %}
+                    <li>
+                        <svg class="el-icon">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ item.icon }}"></use>
+                        </svg>
+                        <a href="{{ item.link }}">{{ item.title }}</a>
+                    </li>
+                {% endfor %}
             </ul>
             <button class="reset"></button>
-        </nav>
-    </div>
+        </div>
+    </nav>
 </header>
