@@ -381,6 +381,25 @@ svg {
   /*width: inherit;
   height: inherit;*/ }
 
+.button {
+  padding: 18px 75px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  border: 1px solid #D5D5D5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #FFE6CC;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #3E3934;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+  .button:hover, .button:active {
+    background: #1D24AB;
+    color: white; }
+
 .header-banner {
   display: -webkit-box;
   display: -webkit-flex;
@@ -601,6 +620,18 @@ svg {
       -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
               transform: translateY(-50%); }
+
+.menu {
+  padding-top: 60px; }
+  .menu__categories {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
 
 .visible {
   visibility: visible !important; }
