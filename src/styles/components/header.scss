@@ -3,10 +3,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 30px 0;
 
     &__logo {
       color: orange;
       transition: .3s;
+      transform: translateX(-20%);
+
+      svg {
+        height: 40px;
+      }
 
       &:hover {
         opacity: 0.6;
@@ -15,10 +21,11 @@
 
     &__search {
       position: relative;
+      flex: 0 0 49%;
 
       &-input {
         position: relative;
-        width: 500px;
+        width: 520px;
         height: 44px;
         font-size: 14px;
         line-height: 19px;
@@ -95,17 +102,30 @@
   }
 
   &__nav {
-    height: 80px;
+    height: 50px;
     background-color: #FF8300;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05), 0 10px 20px rgba(0, 0, 0, 0.08);
     display: flex;
     align-items: center;
 
+    &-wrap {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
     &-list {
+      display: flex;
+      flex: 0 0 85%;
+      justify-content: center;
+      align-items: center;
+
       li {
         list-style-type: none;
         height: 24px;
         display: flex;
+        flex: 0 0 18%;
+        justify-content: flex-end;
 
         svg {
           width: 20px;
@@ -118,10 +138,10 @@
           font-weight: bold;
           line-height: 19px;
           color: #FFFFFF;
-          width: 100%;
           padding-left: 10px;
-          padding-right: 15px;
-          padding-top: 2px;
+          padding-right: 20px;
+          padding-top: 5px;
+          padding-bottom: 5px;
 
           &:after {
             content: "";
@@ -132,6 +152,25 @@
             right: 0;
           }
         }
+      }
+    }
+
+    &-button {
+      position: relative;
+      background: rgba(255, 255, 255, 0.3);
+      border: 1px solid #EF7B00;
+      box-sizing: border-box;
+      border-radius: 60px;
+      color: white;
+      padding: 7px 15px 7px 35px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        @include png-sprite($icon-round-arrow);
+        left: 7px;
+        top: 50%;
+        transform: translateY(-50%);
       }
     }
   }

@@ -9,8 +9,24 @@
                 'icon': '#drop',
                 'link': '#',
                 'title':'Oslo, Norway',
+            },
+            {
+                'icon' : '#union',
+                'link' : '#',
+                'title': '61 km'
+            },
+            {
+                'icon' : '#cubes',
+                'link' : '#',
+                'title': 'Categories'
+            },
+            {
+                'icon' : '#date',
+                'link' : '#',
+                'title' : 'June 4, 2018'
             }
-        ]
+        ],
+        'buttonNav' : 'Reset',
     } %}
 {% endif %}
 
@@ -22,7 +38,7 @@
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use>
                 </svg>
             </div>
-            <div class="header-banner__search-wrap">
+            <div class="header-banner__search">
                 <form action="" class="header-banner__search" method="get">
                     <input type="search" class="header-banner__search-input" id="search"
                            name="search" placeholder="I'm looking for...">
@@ -37,7 +53,8 @@
         </div>
     </div>
     <nav class="header__nav">
-        <div class="container">
+        <div class="header__nav-wrap container">
+
             <ul class="header__nav-list">
                 {% for item in args.nav %}
                     <li>
@@ -48,7 +65,7 @@
                     </li>
                 {% endfor %}
             </ul>
-            <button class="reset"></button>
+            <button class="header__nav-button">{{ args.buttonNav }}</button>
         </div>
     </nav>
 </header>
