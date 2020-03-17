@@ -506,7 +506,7 @@ svg {
         display: block;
         position: absolute;
         background-image: url("../images/png_sprite/sprite.png");
-        background-position: 0px -19px;
+        background-position: -14px -19px;
         width: 13px;
         height: 9px;
         right: 0;
@@ -613,7 +613,7 @@ svg {
       content: "";
       position: absolute;
       background-image: url("../images/png_sprite/sprite.png");
-      background-position: -19px 0px;
+      background-position: 0px -19px;
       width: 14px;
       height: 13px;
       left: 7px;
@@ -633,6 +633,70 @@ svg {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; }
+  .menu__list {
+    padding-top: 50px; }
+  .menu-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 226px;
+    height: 100%;
+    position: relative;
+    border: 0.5px solid #E2E2E5;
+    -webkit-border-radius: 5px;
+            border-radius: 5px; }
+    .menu-item__description {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .menu-item__description p {
+        padding: 10px 10px;
+        font-size: 13px;
+        line-height: 18px; }
+      .menu-item__description h3 {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+        width: 100px;
+        padding-bottom: 15px;
+        padding-left: 10px; }
+      .menu-item__description time {
+        position: relative;
+        font-size: 12px;
+        line-height: 16px;
+        color: rgba(0, 0, 0, 0.6);
+        border-top: 0.5px solid #E2E2E5;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 35px;
+        font-weight: bold; }
+        .menu-item__description time:before {
+          content: "";
+          background-image: url("../images/png_sprite/sprite.png");
+          background-position: -19px 0px;
+          width: 16px;
+          height: 13px;
+          position: absolute;
+          left: 10px;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+                  transform: translateY(-50%); }
 
 .visible {
   visibility: visible !important; }

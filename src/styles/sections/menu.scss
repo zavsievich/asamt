@@ -1,7 +1,65 @@
 .menu {
   padding-top: 60px;
+
   &__categories {
     display: flex;
     justify-content: center;
+  }
+
+  &__list {
+    padding-top: 50px;
+  }
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    width: 226px;
+    height: 100%;
+    position: relative;
+    border: 0.5px solid #E2E2E5;
+    border-radius: 5px;
+
+    &__description {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+
+      p {
+        padding: 10px 10px;
+        font-size: 13px;
+        line-height: 18px;
+      }
+
+      h3 {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+        width: 100px;
+        padding-bottom: 15px;
+        padding-left: 10px;
+      }
+
+      time {
+        position: relative;
+        font-size: 12px;
+        line-height: 16px;
+        color: rgba(0, 0, 0, 0.6);
+        border-top: 0.5px solid #E2E2E5;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 35px;
+        font-weight: bold;
+
+        &:before {
+          content: "";
+          @include png-sprite($icon-calendar);
+          position: absolute;
+          left: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
   }
 }
