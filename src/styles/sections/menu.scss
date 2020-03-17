@@ -1,6 +1,12 @@
 .menu {
   padding-top: 60px;
 
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
   &__categories {
     display: flex;
     justify-content: center;
@@ -8,16 +14,48 @@
 
   &__list {
     padding-top: 50px;
+    position: relative;
+    display: inline-block;
+    height: 320px;
+    margin: 20px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 44px !important;
+      height: 44px !important;
+      border-radius: 50%;
+      top: 50%;
+      right: 20px;
+      background: #FF8300;
+      border: 2px solid #FFFFFF;
+    }
+  }
+
+  &__list--glass {
+    &:after {
+      @include png-sprite($icon-holiday);
+    }
+  }
+
+  &__list--board {
+    &:after {
+      @include png-sprite($icon-board);
+    }
   }
 
   &-item {
     display: flex;
     flex-direction: column;
     width: 226px;
-    height: 100%;
     position: relative;
     border: 0.5px solid #E2E2E5;
     border-radius: 5px;
+
+    &__logo {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
 
     &__description {
       box-sizing: border-box;
@@ -35,9 +73,9 @@
         font-size: 18px;
         line-height: 21px;
         color: #000000;
-        width: 100px;
         padding-bottom: 15px;
         padding-left: 10px;
+        height: 50px;
       }
 
       time {

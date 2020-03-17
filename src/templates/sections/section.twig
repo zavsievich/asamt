@@ -11,15 +11,98 @@
                 'categories' : 'Suggestions',
             }
         ],
+
         'items' : [
             {
+                'type' : 'glass',
                 'img__url' : '../../images/img/festival-of-colours.jpg',
                 'alt' : 'Festival of colours',
                 'place' : 'Helsinki',
                 'event' : 'Festival of colours',
                 'datetime' : '2018-01-06',
                 'date' : 'June 1, 2018 19:00',
-            }
+            },
+            {
+                'type' : 'board',
+                'img__url' : '../../images/img/art.jpg',
+                'alt' : 'Art',
+                'place' : 'Helsinki',
+                'event' : 'Contemporary Art Exhibition',
+                'datetime' : '2018-01-06',
+                'date' : 'June 1, 2018 19:00',
+            },
+            {
+                'type' : 'board',
+                'img__url' : '../../images/img/baseball.jpg',
+                'alt' : 'baseball',
+                'place' : 'Helsinki',
+                'event' : 'Baseball',
+                'datetime' : '2018-01-06',
+                'date' : 'June 1, 2018 19:00',
+            },
+            {
+                'type' : 'board',
+                'img__url' : '../../images/img/baseball.jpg',
+                'alt' : 'baseball',
+                'place' : 'Helsinki',
+                'event' : 'Armin van Buuren - A State of Trance ',
+                'datetime' : '2018-01-06',
+                'date' : 'June 1, 2018 19:00',
+            },
+            {
+                'type' : 'board',
+                'img__url' : '../../images/img/art.jpg',
+                'alt' : 'Art',
+                'place' : 'Helsinki',
+                'event' : ' Contemporary Art Exhibition Contemporary ',
+                'datetime' : '2018-01-06',
+                'date' : 'June 1, 2018 19:00',
+            },
+            {
+                'type' : 'glass',
+                'img__url' : '../../images/img/festival-of-colours.jpg',
+                'alt' : 'Festival of colours',
+                'place' : 'Helsinki',
+                'event' : 'Festival of colours Festival of colours ',
+                'datetime' : '2018-01-06',
+                'date' : 'June 1, 2018 19:00',
+            },
+            {
+                'type' : 'glass',
+                'img__url' : '../../images/img/festival-of-colours.jpg',
+                'alt' : 'Festival of colours',
+                'place' : 'Helsinki',
+                'event' : 'Festival of colours',
+                'datetime' : '2018-01-06',
+                'date' : 'June 1, 2018 19:00',
+            },
+            {
+                'type' : 'board',
+                'img__url' : '../../images/img/art.jpg',
+                'alt' : 'Art',
+                'place' : 'Helsinki',
+                'event' : 'Contemporary Art Exhibition',
+                'datetime' : '2018-01-06',
+                'date' : 'June 1, 2018 19:00',
+            },
+            {
+                'type' : 'board',
+                'img__url' : '../../images/img/baseball.jpg',
+                'alt' : 'baseball',
+                'place' : 'Helsinki',
+                'event' : 'Baseball',
+                'datetime' : '2018-01-06',
+                'date' : 'June 1, 2018 19:00',
+            },
+            {
+                'type' : 'board',
+                'img__url' : '../../images/img/baseball.jpg',
+                'alt' : 'baseball',
+                'place' : 'Helsinki',
+                'event' : 'Armin van Buuren - A State of Trance ',
+                'datetime' : '2018-01-06',
+                'date' : 'June 1, 2018 19:00',
+            },
         ]
     } %}
 {% endif %}
@@ -31,15 +114,17 @@
                     <button class="menu__categories-button button">{{ item.categories }}</button>
                 {% endfor %}
             </div>
-            <div class="menu__list">
+            <div class="menu__wrap">
                 {% for item in args.items %}
-                    <div class="menu-item menu-item--{{ item.icon }}">
-                        <img src="{{ item.img__url }}" alt="{{ item.alt }}"
-                             class="menu-item__logo">
-                        <div class="menu-item__description">
-                            <p>{{ item.place }}</p>
-                            <h3>{{ item.event }}</h3>
-                            <time datetime="{{ item.datetime }}" class="menu-item__date">{{ item.date }}</time>
+                    <div class="menu__list menu__list--{{ item.type }}">
+                        <div class="menu-item menu-item--{{ item.icon }}">
+                            <img src="{{ item.img__url }}" alt="{{ item.alt }}"
+                                 class="menu-item__logo">
+                            <div class="menu-item__description">
+                                <p>{{ item.place }}</p>
+                                <h3>{{ item.event }}</h3>
+                                <time datetime="{{ item.datetime }}" class="menu-item__date">{{ item.date }}</time>
+                            </div>
                         </div>
                     </div>
                 {% endfor %}
