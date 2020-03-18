@@ -6,13 +6,15 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 .container {
-  max-width: 1330px;
+  max-width: 1352px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 20px;
 }
 
 svg {
   fill: currentColor;
-  /*width: inherit;
-  height: inherit;*/
+}
+
+.visually-hidden {
+  display: none;
 }

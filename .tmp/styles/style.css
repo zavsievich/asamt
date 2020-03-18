@@ -38,6 +38,10 @@
   width: 178px;
   height: 31px; }
 
+.icon-search {
+  width: 19px;
+  height: 19px; }
+
 .icon-union {
   width: 24px;
   height: 20px; }
@@ -372,14 +376,15 @@ body {
   font-family: 'Nunito', sans-serif; }
 
 .container {
-  max-width: 1330px;
+  max-width: 1352px;
   margin: 0 auto;
-  padding: 0; }
+  padding: 0 20px; }
 
 svg {
-  fill: currentColor;
-  /*width: inherit;
-  height: inherit;*/ }
+  fill: currentColor; }
+
+.visually-hidden {
+  display: none; }
 
 .button {
   padding: 18px 55px;
@@ -416,15 +421,16 @@ svg {
           justify-content: space-between;
   padding: 30px 0; }
   .header-banner__logo {
-    color: orange;
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s;
-    -webkit-transform: translateX(-30%);
-        -ms-transform: translateX(-30%);
-            transform: translateX(-30%); }
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 28%;
+        -ms-flex: 0 0 28%;
+            flex: 0 0 28%; }
     .header-banner__logo svg {
-      height: 40px; }
+      height: 40px;
+      color: orange; }
     .header-banner__logo:hover {
       opacity: 0.6; }
   .header-banner__search {
@@ -435,15 +441,14 @@ svg {
             flex: 0 0 49%; }
     .header-banner__search-input {
       position: relative;
-      width: 520px;
-      height: 44px;
+      width: 80%;
       font-size: 14px;
       line-height: 19px;
       color: rgba(0, 0, 0, 0.3);
       border: 2px solid orange;
       -webkit-border-radius: 9px;
               border-radius: 9px;
-      padding-left: 45px; }
+      padding: 10px 0 11px 45px; }
       .header-banner__search-input:before {
         content: "";
         display: block;
@@ -453,10 +458,6 @@ svg {
         height: 19px; }
     .header-banner__search-label {
       position: absolute;
-      background-image: url("../images/png_sprite/sprite.png");
-      background-position: -20px -41px;
-      width: 19px;
-      height: 19px;
       width: 19px;
       height: 19px;
       left: 13px;
@@ -472,8 +473,7 @@ svg {
         opacity: 0.8; }
     .header-banner__search-btn {
       position: absolute;
-      height: 44px;
-      width: 70px;
+      padding: 13px;
       background-color: #ff8300;
       -webkit-border-radius: 0 5px 5px 0;
               border-radius: 0 5px 5px 0;
@@ -496,13 +496,20 @@ svg {
         -ms-flex-align: center;
             align-items: center;
     position: relative;
-    cursor: pointer; }
-    .header-banner__user a {
+    cursor: pointer;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 22%;
+        -ms-flex: 0 0 22%;
+            flex: 0 0 22%; }
+    .header-banner__user button {
+      border: none;
+      background-color: #FFFFFF;
       padding: 20px;
       padding-right: 40px;
       position: relative;
-      font-weight: bold; }
-      .header-banner__user a:after {
+      font-weight: bold;
+      outline: none; }
+      .header-banner__user button:after {
         content: "";
         display: block;
         position: absolute;
@@ -651,7 +658,7 @@ svg {
     position: relative;
     display: inline-block;
     height: 320px;
-    margin: 20px;
+    margin: 5px;
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s; }
