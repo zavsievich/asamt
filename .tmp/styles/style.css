@@ -474,7 +474,7 @@ svg {
         opacity: 0.8; }
     .header-banner__search-btn {
       position: absolute;
-      padding: 13px;
+      padding: 13px 18px;
       background-color: #ff8300;
       -webkit-border-radius: 0 5px 5px 0;
               border-radius: 0 5px 5px 0;
