@@ -1,9 +1,11 @@
 .button {
-  padding: 18px 55px;
-  border-radius: 5px;
+  padding: 14px 46px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
   border: 1px solid #D5D5D5;
   box-sizing: border-box;
   background: #FFE6CC;
+  margin: -3px;
 
   font-weight: 600;
   font-size: 16px;
@@ -13,7 +15,14 @@
   cursor: pointer;
 
   &:hover, &:active {
-    background: #1D24AB;
+    background: #FF8300;
     color: white;
+  }
+  
+  &--cheked {
+    border-radius: 5px;
+    background-color: #1D24AB;
+    color: #FFFFFF;
+    z-index: 1;
   }
 }

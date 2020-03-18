@@ -390,13 +390,16 @@ a {
   text-decoration: none; }
 
 .button {
-  padding: 18px 55px;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
+  padding: 14px 46px;
+  -webkit-border-bottom-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+          border-top-right-radius: 5px;
   border: 1px solid #D5D5D5;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #FFE6CC;
+  margin: -3px;
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
@@ -406,8 +409,14 @@ a {
   transition: .3s;
   cursor: pointer; }
   .button:hover, .button:active {
-    background: #1D24AB;
+    background: #FF8300;
     color: white; }
+  .button--cheked {
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    background-color: #1D24AB;
+    color: #FFFFFF;
+    z-index: 1; }
 
 .header-banner {
   display: -webkit-box;
@@ -623,7 +632,8 @@ a {
             border-radius: 60px;
     color: white;
     padding: 7px 15px 7px 35px;
-    cursor: pointer; }
+    cursor: pointer;
+    outline: none; }
     .header__nav-button:before {
       content: "";
       position: absolute;
