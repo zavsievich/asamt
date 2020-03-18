@@ -18,7 +18,7 @@
                 'camelCase' : '../../images/img/festival-of-colours.jpg',
                 'alt' : 'Festival of colours',
                 'place' : 'Helsinki',
-                'event' : 'Festival of colours',
+                'event' : 'Festival of colours Armin van Buuren',
                 'datetime' : '2018-01-06',
                 'date' : 'June 1, 2018 19:00',
             },
@@ -81,7 +81,7 @@
                 'camelCase' : '../../images/img/art.jpg',
                 'alt' : 'Art',
                 'place' : 'Helsinki',
-                'event' : 'Contemporary Art Exhibition',
+                'event' : 'Contemporary Art Exhibition Armin van Buuren ',
                 'datetime' : '2018-01-06',
                 'date' : 'June 1, 2018 19:00',
             },
@@ -99,7 +99,7 @@
                 'camelCase' : '../../images/img/baseball.jpg',
                 'alt' : 'baseball',
                 'place' : 'Helsinki',
-                'event' : 'Armin van Buuren - A State of Trance ',
+                'event' : 'Armin van Buuren - A State',
                 'datetime' : '2018-01-06',
                 'date' : 'June 1, 2018 19:00',
             },
@@ -109,6 +109,7 @@
 <section class="section">
     <div class="container">
         <main class="menu">
+            <h2 class="visually-hidden"></h2>
             <div class="menu__categories">
                 {% for item in args.switch %}
                     <button class="menu__categories-button button button--{{ item.selected }}">{{ item.categories }}</button>

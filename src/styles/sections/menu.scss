@@ -23,13 +23,12 @@
     &:after {
       content: "";
       position: absolute;
-      width: 44px !important;
-      height: 44px !important;
+      -webkit-border-radius: 50%;
       border-radius: 50%;
       top: 50%;
-      right: 20px;
+      transform: translateY(50%);
+      right: 4px;
       background: #FF8300;
-      border: 2px solid #FFFFFF;
       cursor: pointer;
     }
   }
@@ -82,7 +81,7 @@
       color: #000000;
       padding-bottom: 15px;
       padding-left: 10px;
-      height: 50px;
+      padding-right: 11px;
     }
 
     &-date {
