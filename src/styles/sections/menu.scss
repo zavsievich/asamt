@@ -21,6 +21,7 @@
     }
 
     &:after {
+      display: none;
       content: "";
       position: absolute;
       -webkit-border-radius: 50%;

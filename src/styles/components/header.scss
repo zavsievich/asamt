@@ -119,7 +119,7 @@
 
     &-list {
       display: flex;
-      flex: 0 0 75%;
+      //flex: 0 0 75%;
       justify-content: center;
       align-items: center;
     }
@@ -128,6 +128,7 @@
       list-style-type: none;
       display: flex;
       flex-grow: 1;
+      padding: 0 40px;
     }
 
     &-link {
@@ -170,6 +171,8 @@
       padding: 7px 15px 7px 35px;
       cursor: pointer;
       outline: none;
+
+      display: none;
 
       &:before {
         content: "";
