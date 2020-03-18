@@ -3,7 +3,7 @@
         'switch' : [
             {
                 'categories' : 'All events',
-                'cheked' : 'cheked',
+                'selected' : 'selected',
             },
             {
                 'categories' : 'Trending',
@@ -112,7 +112,7 @@
         <div class="menu">
             <div class="menu__categories">
                 {% for item in args.switch %}
-                    <button class="menu__categories-button button button--{{ item.cheked }}">{{ item.categories }}</button>
+                    <button class="menu__categories-button button button--{{ item.selected }}">{{ item.categories }}</button>
                 {% endfor %}
             </div>
             <div class="menu__wrap">

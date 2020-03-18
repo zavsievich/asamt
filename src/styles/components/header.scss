@@ -126,7 +126,8 @@
     &-item {
       list-style-type: none;
       display: flex;
-      margin: 0 50px;
+
+     flex-grow: 1;
     }
 
     &-link {
