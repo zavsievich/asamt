@@ -88,6 +88,7 @@
         position: relative;
         font-weight: bold;
         outline: none;
+        cursor: pointer;
 
         &:after {
           content: "";
@@ -126,7 +127,6 @@
     &-item {
       list-style-type: none;
       display: flex;
-
      flex-grow: 1;
     }
 
