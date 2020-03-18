@@ -444,11 +444,12 @@ svg {
       width: 80%;
       font-size: 14px;
       line-height: 19px;
-      color: rgba(0, 0, 0, 0.3);
+      color: #00006f;
       border: 2px solid orange;
       -webkit-border-radius: 9px;
               border-radius: 9px;
-      padding: 10px 0 11px 45px; }
+      padding: 10px 0 11px 45px;
+      outline: none; }
       .header-banner__search-input:before {
         content: "";
         display: block;

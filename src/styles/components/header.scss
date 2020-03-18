@@ -28,10 +28,11 @@
         width: 80%;
         font-size: 14px;
         line-height: 19px;
-        color: rgba(0, 0, 0, 0.3);
+        color: #00006f;
         border: 2px solid orange;
         border-radius: 9px;
         padding: 10px 0 11px 45px;
+        outline: none;
 
         &:before {
           content: "";
@@ -42,7 +43,6 @@
 
       &-label {
         position: absolute;
-        //@include png-sprite($icon-magnifier);
         width: 19px;
         height: 19px;
         left: 13px;
