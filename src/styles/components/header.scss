@@ -118,43 +118,45 @@
 
     &-list {
       display: flex;
-      flex: 0 0 85%;
+      flex: 0 0 75%;
       justify-content: center;
       align-items: center;
+    }
 
-      li {
-        list-style-type: none;
-        height: 24px;
-        display: flex;
-        flex: 0 0 18%;
-        justify-content: flex-end;
+    &-item {
+      list-style-type: none;
+      display: flex;
+      margin: 0 50px;
+    }
 
-        svg {
-          width: 20px;
-          color: white;
-        }
+    &-link {
+      list-style-type: none;
+      height: 24px;
+      display: flex;
+      justify-content: flex-end;
+      text-decoration: none;
+      color: #FFFFFF;
+      align-items: center;
+      position: relative;
+      padding: 0 10px;
 
-        a {
-          position: relative;
-          text-decoration: none;
-          font-weight: bold;
-          line-height: 19px;
-          color: #FFFFFF;
-          padding-left: 10px;
-          padding-right: 20px;
-          padding-top: 5px;
-          padding-bottom: 5px;
-
-          &:after {
-            content: "";
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            @include png-sprite($icon-subtract);
-            right: 0;
-          }
-        }
+      svg {
+        width: 20px;
+        height: 20px;
       }
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        @include png-sprite($icon-subtract);
+        right: 0;
+      }
+    }
+
+    &-title {
+      padding: 5px 10px 5px 10px;
     }
 
     &-button {
