@@ -44,6 +44,7 @@
 
       &-label {
         font-size: 0;
+
         &:hover {
           opacity: 0.8;
         }
@@ -71,27 +72,6 @@
       position: relative;
       cursor: pointer;
       flex: 0 0 22%;
-
-      button {
-        border: none;
-        background-color: #FFFFFF;
-        padding: 20px;
-        padding-right: 40px;
-        position: relative;
-        font-weight: bold;
-        cursor: pointer;
-
-        &:after {
-          content: "";
-          display: block;
-          position: absolute;
-          @include png-sprite($icon-intersect);
-          right: 0;
-          top: 50%;
-          transform: translateY(-50%);
-          transition: .3s;
-        }
-      }
     }
   }
 
