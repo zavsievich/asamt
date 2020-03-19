@@ -60,20 +60,18 @@
         </div>
     </div>
     <nav class="header__nav">
-        <div class="header__nav-wrap container">
-            <ul class="header__nav-list">
-                {% for item in args.nav %}
-                    <li class="header__nav-item">
-                        <button class="header__nav-item--btn" href="{{ item.link }}">
-                            <svg class="el-icon">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ item.icon }}"></use>
-                            </svg>
-                            <span class="header__nav-item--title">{{ item.title }}</span>
-                        </button>
-                    </li>
-                {% endfor %}
-                <button class="header__nav-button" type="button">{{ args.buttonNav }}</button>
-            </ul>
-        </div>
+        <ul class="header__nav-list container">
+            {% for item in args.nav %}
+                <li class="header__nav-item">
+                    <button class="header__nav-item--btn" href="{{ item.link }}">
+                        <svg class="el-icon">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ item.icon }}"></use>
+                        </svg>
+                        <span class="header__nav-item--title">{{ item.title }}</span>
+                    </button>
+                </li>
+            {% endfor %}
+            <button class="header__nav-button" type="button">{{ args.buttonNav }}</button>
+        </ul>
     </nav>
 </header>
