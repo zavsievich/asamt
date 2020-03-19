@@ -658,9 +658,9 @@ a {
         -ms-transform: translateY(-50%);
             transform: translateY(-50%); }
 
-.cards {
+.s-events {
   margin-top: 60px; }
-  .cards__list {
+  .s-events__list {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -674,7 +674,7 @@ a {
             flex-wrap: wrap;
     padding-top: 50px;
     position: relative; }
-  .cards__categories {
+  .s-events__categories {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -683,7 +683,7 @@ a {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; }
-  .cards__item {
+  .s-events__item {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -700,7 +700,7 @@ a {
             border-radius: 5px;
     list-style-type: none;
     margin: 15px; }
-    .cards__item-icon {
+    .s-events__item-icon {
       width: 50px;
       height: 50px;
       background-color: orange;
@@ -721,9 +721,9 @@ a {
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center; }
-      .cards__item-icon svg {
+      .s-events__item-icon svg {
         height: 30px; }
-    .cards__item-logo {
+    .s-events__item-logo {
       -webkit-border-top-left-radius: 5px;
               border-top-left-radius: 5px;
       -webkit-border-top-right-radius: 5px;
@@ -732,7 +732,7 @@ a {
       -o-transition: .3s;
       transition: .3s;
       height: 134px; }
-    .cards__item-description {
+    .s-events__item-description {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -742,11 +742,11 @@ a {
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
               flex-direction: column; }
-    .cards__item-text {
+    .s-events__item-text {
       padding: 10px 10px;
       font-size: 13px;
       line-height: 18px; }
-    .cards__item-title {
+    .s-events__item-title {
       font-weight: bold;
       font-size: 18px;
       line-height: 21px;
@@ -754,7 +754,7 @@ a {
       padding-bottom: 15px;
       padding-left: 10px;
       padding-right: 11px; }
-    .cards__item-date {
+    .s-events__item-date {
       position: relative;
       font-size: 12px;
       line-height: 16px;
@@ -764,7 +764,7 @@ a {
       padding-bottom: 12px;
       padding-left: 35px;
       font-weight: bold; }
-      .cards__item-date:before {
+      .s-events__item-date:before {
         content: "";
         background-image: url("../images/png_sprite/sprite.png");
         background-position: -39px -41px;
