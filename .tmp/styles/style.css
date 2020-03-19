@@ -424,8 +424,6 @@ a {
   -webkit-border-top-right-radius: 5px;
           border-top-right-radius: 5px;
   border: 1px solid #D5D5D5;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   background: #FFE6CC;
   font-weight: 600;
   font-size: 16px;
@@ -640,8 +638,6 @@ a {
     position: relative;
     background: rgba(255, 255, 255, 0.3);
     border: 1px solid #EF7B00;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
     -webkit-border-radius: 60px;
             border-radius: 60px;
     color: white;
@@ -739,8 +735,6 @@ a {
       transition: .3s;
       height: 134px; }
     .menu__item-description {
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
