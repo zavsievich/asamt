@@ -106,31 +106,42 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05), 0 10px 20px rgba(0, 0, 0, 0.08);
     display: flex;
     align-items: center;
+    position: relative;
+
+    &-wrap {
+      display: flex;
+    }
 
     &-list {
       display: flex;
       justify-content: center;
       align-items: center;
+      position: relative;
+
+     /* &::after {
+        content: "Reset";
+        position: absolute;
+        @include png-sprite($icon-round-arrow);
+        right: 0;
+        transform: translateY(-50%);
+        top: 50%;
+
+      }*/
     }
 
     &-item {
       list-style-type: none;
       display: flex;
-      flex-grow: 1;
-      padding: 20px 40px;
+      padding: 20px 10px;
+      flex: 0 0 33%;
 
       &--btn {
-        list-style-type: none;
-        height: 24px;
-        display: flex;
-        justify-content: flex-end;
-        text-decoration: none;
         color: #FFFFFF;
-        align-items: center;
         position: relative;
         padding: 0 10px;
         border: none;
         background: none;
+        cursor: pointer;
 
         svg {
           width: 20px;
@@ -152,7 +163,7 @@
       }
     }
 
-    /*&-button {
+    &-button {
       position: relative;
       background: rgba(255, 255, 255, 0.3);
       border: 1px solid #EF7B00;
@@ -161,8 +172,7 @@
       color: white;
       padding: 7px 15px 7px 35px;
       cursor: pointer;
-
-      display: none;
+      margin-left: auto;
 
       &:before {
         content: "";
@@ -172,6 +182,6 @@
         top: 50%;
         transform: translateY(-50%);
       }
-    }*/
+    }
   }
 }
