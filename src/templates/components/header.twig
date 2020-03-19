@@ -1,32 +1,32 @@
 {% if not args %}
     {% set args = {
-        'avatar': '../../images/img/ava.png',
-        'button': 'Go!',
-        'name' : 'Robert Singer',
-        'nav' :
+        avatar: '../../images/img/ava.png',
+        button: 'Go!',
+        name : 'Robert Singer',
+        nav:
         [
             {
-                'icon': '#drop',
-                'link': '#',
-                'title':'Oslo, Norway',
+                icon: '#drop',
+                link: '#',
+                title:'Oslo, Norway',
             },
             {
-                'icon' : '#union',
-                'link' : '#',
-                'title': '61 km'
+                icon : '#union',
+                link : '#',
+                title: '61 km'
             },
             {
-                'icon' : '#cubes',
-                'link' : '#',
-                'title': 'Categories'
+                icon : '#cubes',
+                link : '#',
+                title: 'Categories'
             },
             {
-                'icon' : '#date',
-                'link' : '#',
-                'title' : 'June 4, 2018'
+                icon : '#date',
+                link : '#',
+                title : 'June 4, 2018'
             }
         ],
-        'buttonNav' : 'Reset',
+        buttonNav : 'Reset',
     } %}
 {% endif %}
 
@@ -60,7 +60,7 @@
     <nav class="header__nav">
         <div class="header__nav-button--wrap1">
             <button class="header__nav-button" type="button">{{ args.buttonNav }}</button>
-        </div>  
+        </div>
         <ul class="header__nav-list">
             {% for item in args.nav %}
                 <li class="header__nav-item">
