@@ -5,7 +5,7 @@
     justify-content: space-between;
 
     &__logo {
-      transition: .3s;
+      transition: 0.3s;
       flex: 0 0 28%;
 
       svg {
@@ -57,7 +57,7 @@
         border: none;
         color: white;
         cursor: pointer;
-        transition: .3s;
+        transition: 0.3s;
         font-size: 18px;
 
         &:hover {
@@ -75,14 +75,16 @@
     }
   }
 
-  &__nav {
-    background-color: #FF8300;
+  &__basis {
+    background-color: #ff8300;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05), 0 10px 20px rgba(0, 0, 0, 0.08);
     display: flex;
     align-items: center;
     position: relative;
     justify-content: space-around;
+  }
 
+  &__nav {
     &-wrap {
       display: flex;
     }
@@ -98,10 +100,10 @@
       list-style-type: none;
       display: flex;
       padding: 20px 10px;
-      flex: 0 0 30%;
+      // flex: 0 0 30%;
 
       &--btn {
-        color: #FFFFFF;
+        color: #ffffff;
         position: relative;
         padding: 0 10px;
         border: none;
@@ -113,7 +115,7 @@
           height: 20px;
         }
 
-        &:after {
+        &::after {
           content: "";
           position: absolute;
           top: 50%;
@@ -131,7 +133,7 @@
     &-button {
       position: relative;
       background: rgba(255, 255, 255, 0.3);
-      border: 1px solid #EF7B00;
+      border: 1px solid #ef7b00;
       border-radius: 60px;
       color: white;
       padding: 7px 15px 7px 35px;
