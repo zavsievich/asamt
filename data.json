@@ -1,7 +1,7 @@
 {
   "isGulpTwig": true,
   "site": {
-      "language_attributes": "lang='ru-RU'",
+      "language_attributes": "lang='en'",
       "description": "",
       "theme": {
           "link": "/"
