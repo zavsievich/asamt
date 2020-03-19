@@ -30,7 +30,10 @@
         color: #00006f;
         border: 2px solid orange;
         border-radius: 9px;
-        padding: 10px 0 11px 45px;
+        padding: 7px 0 9px 45px;
+        border-right: none;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
 
         &:before {
           content: "";
@@ -40,30 +43,21 @@
       }
 
       &-label {
-        position: absolute;
-        width: 19px;
-        height: 19px;
-        left: 13px;
-        top: 50%;
-        transform: translateY(-50%);
-        padding: 9px;
-        transition: .3s;
-
+        font-size: 0;
         &:hover {
           opacity: 0.8;
         }
       }
 
       &-btn {
-        position: absolute;
-        padding: 13px 18px;
+        padding: 10px 18px;
         background-color: #ff8300;
         border-radius: 0 5px 5px 0;
         border: none;
         color: white;
-        margin-left: -10px;
         cursor: pointer;
         transition: .3s;
+        font-size: 18px;
 
         &:hover {
           background-color: orange;
