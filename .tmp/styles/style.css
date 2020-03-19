@@ -400,7 +400,7 @@ body {
   font-family: 'Nunito', sans-serif; }
 
 .container {
-  max-width: 1352px;
+  max-width: 1210px;
   margin: 0 auto;
   padding: 0 20px; }
 
@@ -578,7 +578,10 @@ a {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative; }
+  position: relative;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
   .header__nav-wrap {
     display: -webkit-box;
     display: -webkit-flex;
@@ -606,9 +609,9 @@ a {
     display: flex;
     padding: 20px 10px;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 28%;
-        -ms-flex: 0 0 28%;
-            flex: 0 0 28%; }
+    -webkit-flex: 0 0 30%;
+        -ms-flex: 0 0 30%;
+            flex: 0 0 30%; }
     .header__nav-item--btn {
       color: #FFFFFF;
       position: relative;
@@ -643,7 +646,11 @@ a {
             border-radius: 60px;
     color: white;
     padding: 7px 15px 7px 35px;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 22%;
+        -ms-flex: 0 0 22%;
+            flex: 0 0 22%; }
     .header__nav-button:before {
       content: "";
       position: absolute;

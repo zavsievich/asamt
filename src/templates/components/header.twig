@@ -31,36 +31,37 @@
 {% endif %}
 
 <header class="header">
-    <div class="container">
-        <div class="header-banner">
-            <h1 class="header-banner__logo">
-                <a href="/">
-                    <svg class="el-icon">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use>
-                    </svg>
-                    <span class="visually-hidden">Asamt</span>
-                </a>
-            </h1>
-            <div class="header-banner__search">
-                <form action="" class="header-banner__search" method="get">
-                    <input type="search" class="header-banner__search-input" id="search"
-                           name="search" placeholder="I'm looking for...">
-                    <button class="header-banner__search-btn" type="submit">{{ args.button }}</button>
-                    <label for="search" class="header-banner__search-label">
-                        {# <svg class="el-icon">
-                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use>
-                         </svg>#}
-                    </label>
-                </form>
-            </div>
-            <div class="header-banner__user">
-                <div class="header__user-avatar"><img src="{{ args.avatar }}" alt="avatar"></div>
-                <button class="header__user-name">{{ args.name }}</button>
-            </div>
+    <div class="header-banner">
+        <h1 class="header-banner__logo">
+            <a href="/">
+                <svg class="el-icon">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use>
+                </svg>
+                <span class="visually-hidden">Asamt</span>
+            </a>
+        </h1>
+        <div class="header-banner__search">
+            <form action="" class="header-banner__search" method="get">
+                <input type="search" class="header-banner__search-input" id="search"
+                       name="search" placeholder="I'm looking for...">
+                <button class="header-banner__search-btn" type="submit">{{ args.button }}</button>
+                <label for="search" class="header-banner__search-label">
+                    {# <svg class="el-icon">
+                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use>
+                     </svg>#}
+                </label>
+            </form>
+        </div>
+        <div class="header-banner__user">
+            <div class="header__user-avatar"><img src="{{ args.avatar }}" alt="avatar"></div>
+            <button class="header__user-name">{{ args.name }}</button>
         </div>
     </div>
     <nav class="header__nav">
-        <ul class="header__nav-list container">
+        <div class="header__nav-button--wrap1">
+            <button class="header__nav-button" type="button">{{ args.buttonNav }}</button>
+        </div>  
+        <ul class="header__nav-list">
             {% for item in args.nav %}
                 <li class="header__nav-item">
                     <button class="header__nav-item--btn" href="{{ item.link }}">
@@ -71,7 +72,9 @@
                     </button>
                 </li>
             {% endfor %}
-            <button class="header__nav-button" type="button">{{ args.buttonNav }}</button>
         </ul>
+        <div class="header__nav-button--wrap1">
+            <button class="header__nav-button" type="button">{{ args.buttonNav }}</button>
+        </div>
     </nav>
 </header>
