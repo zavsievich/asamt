@@ -16,33 +16,23 @@
 
   &__item {
 
-    :hover {
-      opacity: 0.8;
-    }
-
-    &:after {
-      display: none;
-      content: "";
-      position: absolute;
-      -webkit-border-radius: 50%;
+    &-icon {
+      width: 50px;
+      height: 50px;
+      background-color: orange;
       border-radius: 50%;
-      top: 50%;
-      transform: translateY(50%);
-      right: 4px;
-      background: #FF8300;
-      cursor: pointer;
-    }
-  }
+      transform: translateY(-50%);
+      border: 5px solid white;
+      position: absolute;
+      right: 10px;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
 
-  &__item--glass {
-    &:after {
-      @include png-sprite($icon-holiday);
-    }
-  }
-
-  &__item--board {
-    &:after {
-      @include png-sprite($icon-board);
+      svg {
+        width: 39px;
+        height: 30px;
+      }
     }
   }
 

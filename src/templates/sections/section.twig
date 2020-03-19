@@ -21,6 +21,7 @@
                 'event' : 'Festival of colours Armin van Buuren',
                 'datetime' : '2018-01-06',
                 'date' : 'June 1, 2018 19:00',
+                'typeIcon' : '#cup',
             },
             {
                 'type' : 'board',
@@ -30,6 +31,7 @@
                 'event' : 'Contemporary Art Exhibition',
                 'datetime' : '2018-01-06',
                 'date' : 'June 1, 2018 19:00',
+                'typeIcon' : '#art',
             },
             {
                 'type' : 'board',
@@ -39,6 +41,7 @@
                 'event' : 'Baseball',
                 'datetime' : '2018-01-06',
                 'date' : 'June 1, 2018 19:00',
+                'typeIcon' : '#boll',
             },
             {
                 'type' : 'board',
@@ -48,6 +51,7 @@
                 'event' : 'Armin van Buuren - A State of Trance ',
                 'datetime' : '2018-01-06',
                 'date' : 'June 1, 2018 19:00',
+                'typeIcon' : '#boll',
             },
             {
                 'type' : 'board',
@@ -57,6 +61,7 @@
                 'event' : ' Contemporary Art Exhibition Contemporary ',
                 'datetime' : '2018-01-06',
                 'date' : 'June 1, 2018 19:00',
+                'typeIcon' : '#wins',
             },
             {
                 'type' : 'glass',
@@ -66,6 +71,7 @@
                 'event' : 'Festival of colours Festival of colours ',
                 'datetime' : '2018-01-06',
                 'date' : 'June 1, 2018 19:00',
+                'typeIcon' : '#art',
             },
             {
                 'type' : 'glass',
@@ -75,6 +81,7 @@
                 'event' : 'Festival of colours',
                 'datetime' : '2018-01-06',
                 'date' : 'June 1, 2018 19:00',
+                'typeIcon' : '#wins',
             },
             {
                 'type' : 'board',
@@ -84,6 +91,7 @@
                 'event' : 'Contemporary Art Exhibition Armin van Buuren ',
                 'datetime' : '2018-01-06',
                 'date' : 'June 1, 2018 19:00',
+                'typeIcon' : '#art',
             },
             {
                 'type' : 'board',
@@ -93,6 +101,7 @@
                 'event' : 'Baseball',
                 'datetime' : '2018-01-06',
                 'date' : 'June 1, 2018 19:00',
+                'typeIcon' : '#cup',
             },
             {
                 'type' : 'board',
@@ -102,6 +111,7 @@
                 'event' : 'Armin van Buuren - A State',
                 'datetime' : '2018-01-06',
                 'date' : 'June 1, 2018 19:00',
+                'typeIcon' : '#cup',
             },
         ]
     } %}
@@ -124,6 +134,12 @@
                             <p class="menu__item-text">{{ item.place }}</p>
                             <h3 class="menu__item-title">{{ item.event }}</h3>
                             <time datetime="{{ item.datetime }}" class="menu__item-date">{{ item.date }}</time>
+                            <div class="menu__item-icon">
+                                <svg class="el-icon">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                         xlink:href="{{ item.typeIcon }}"></use>
+                                </svg>
+                            </div>
                         </div>
                     </li>
                 {% endfor %}
