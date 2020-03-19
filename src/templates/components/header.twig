@@ -47,9 +47,9 @@
                            name="search" placeholder="I'm looking for...">
                     <button class="header-banner__search-btn" type="submit">{{ args.button }}</button>
                     <label for="search" class="header-banner__search-label">
-                       {# <svg class="el-icon">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use>
-                        </svg>#}
+                        {# <svg class="el-icon">
+                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use>
+                         </svg>#}
                     </label>
                 </form>
             </div>
@@ -60,21 +60,18 @@
         </div>
     </div>
     <nav class="header__nav">
-        <div class="header__nav-wrap container">
-
-            <ul class="header__nav-list">
-                {% for item in args.nav %}
-                    <li class="header__nav-item">
-                        <a class="header__nav-link" href="{{ item.link }}">
-                            <svg class="el-icon">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ item.icon }}"></use>
-                            </svg>
-                            <span class="header__nav-title">{{ item.title }}</span>
-                        </a>
-                    </li>
-                {% endfor %}
-            </ul>
-            <button class="header__nav-button" type="button">{{ args.buttonNav }}</button>
-        </div>
+        <ul class="header__nav-list container">
+            {% for item in args.nav %}
+                <li class="header__nav-item">
+                    <button class="header__nav-item--btn" href="{{ item.link }}">
+                        <svg class="el-icon">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ item.icon }}"></use>
+                        </svg>
+                        <span class="header__nav-item--title">{{ item.title }}</span>
+                    </button>
+                </li>
+            {% endfor %}
+        </ul>
+{#        <button class="header__nav-button" type="button">{{ args.buttonNav }}</button>#}
     </nav>
 </header>
