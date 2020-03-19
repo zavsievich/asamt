@@ -18,6 +18,10 @@
     background: #FF8300;
     color: white;
   }
+
+  &:focus {
+    outline: 4px solid rgba(0,125,250,0.6);
+  }
   
   &--selected {
     border-radius: 5px;

@@ -32,7 +32,6 @@
         border: 2px solid orange;
         border-radius: 9px;
         padding: 10px 0 11px 45px;
-        outline: none;
 
         &:before {
           content: "";
@@ -87,7 +86,6 @@
         padding-right: 40px;
         position: relative;
         font-weight: bold;
-        outline: none;
         cursor: pointer;
 
         &:after {
@@ -170,7 +168,6 @@
       color: white;
       padding: 7px 15px 7px 35px;
       cursor: pointer;
-      outline: none;
 
       display: none;
 

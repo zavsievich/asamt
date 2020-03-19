@@ -370,7 +370,11 @@ template {
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  outline: none; }
+
+*:focus {
+  outline: 4px solid rgba(0, 125, 250, 0.6); }
 
 body {
   font-family: 'Nunito', sans-serif; }
@@ -415,6 +419,8 @@ a {
   .button:hover, .button:active {
     background: #FF8300;
     color: white; }
+  .button:focus {
+    outline: 4px solid rgba(0, 125, 250, 0.6); }
   .button--selected {
     -webkit-border-radius: 5px;
             border-radius: 5px;
@@ -464,8 +470,7 @@ a {
       border: 2px solid orange;
       -webkit-border-radius: 9px;
               border-radius: 9px;
-      padding: 10px 0 11px 45px;
-      outline: none; }
+      padding: 10px 0 11px 45px; }
       .header-banner__search-input:before {
         content: "";
         display: block;
@@ -525,7 +530,6 @@ a {
       padding-right: 40px;
       position: relative;
       font-weight: bold;
-      outline: none;
       cursor: pointer; }
       .header-banner__user button:after {
         content: "";
@@ -638,7 +642,6 @@ a {
     color: white;
     padding: 7px 15px 7px 35px;
     cursor: pointer;
-    outline: none;
     display: none; }
     .header__nav-button:before {
       content: "";
