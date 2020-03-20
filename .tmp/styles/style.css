@@ -471,7 +471,7 @@ a {
     display: block;
     position: absolute;
     background-image: url("../images/png_sprite/sprite.png");
-    background-position: 0px -66px;
+    background-position: -14px -66px;
     width: 13px;
     height: 9px;
     right: 0;
@@ -492,10 +492,10 @@ a {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .header-banner__logo {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
@@ -510,11 +510,10 @@ a {
     .header-banner__logo:hover {
       opacity: 0.6; }
   .header-banner__search {
-    position: relative;
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 49%;
-        -ms-flex: 0 0 49%;
-            flex: 0 0 49%; }
+    -webkit-flex: 0 0 44%;
+        -ms-flex: 0 0 44%;
+            flex: 0 0 44%; }
     .header-banner__search-input {
       position: relative;
       width: 80%;
@@ -522,23 +521,33 @@ a {
       line-height: 19px;
       color: #00006f;
       border: 2px solid #FF8300;
-      -webkit-border-radius: 9px;
-              border-radius: 9px;
-      padding: 7px 0 9px 45px;
+      -webkit-border-radius: 5px;
+              border-radius: 5px;
+      padding: 9px 0 9px 45px;
       border-right: none;
       -webkit-border-top-right-radius: 0;
               border-top-right-radius: 0;
       -webkit-border-bottom-right-radius: 0;
               border-bottom-right-radius: 0; }
-      .header-banner__search-input::before {
-        content: "";
-        display: block;
-        background-image: url("../images/png_sprite/sprite.png");
-        background-position: -20px -41px;
-        width: 19px;
-        height: 19px; }
     .header-banner__search-label {
-      font-size: 0; }
+      font-size: 0;
+      position: relative;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .header-banner__search-label::before {
+        content: "";
+        position: absolute;
+        background-image: url("../images/png_sprite/sprite.png");
+        background-position: -39px -41px;
+        width: 19px;
+        height: 19px;
+        z-index: 1;
+        top: 50%;
+        -webkit-transform: translate(50%, -50%);
+            -ms-transform: translate(50%, -50%);
+                transform: translate(50%, -50%); }
       .header-banner__search-label:hover {
         opacity: 0.8; }
     .header-banner__search-btn {
@@ -614,7 +623,7 @@ a {
       content: "";
       position: absolute;
       background-image: url("../images/png_sprite/sprite.png");
-      background-position: -55px -41px;
+      background-position: 0px -66px;
       width: 14px;
       height: 13px;
       left: 7px;
@@ -628,7 +637,8 @@ a {
   -webkit-flex: 1 0 70%;
       -ms-flex: 1 0 70%;
           flex: 1 0 70%;
-  margin-left: 15%; }
+  margin-left: 15%;
+  font-size: 0; }
   .header__nav-wrap {
     display: -webkit-box;
     display: -webkit-flex;
@@ -664,7 +674,15 @@ a {
       padding: 0 10px;
       border: none;
       background: none;
-      cursor: pointer; }
+      cursor: pointer;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
       .header__nav-item--btn svg {
         width: 20px;
         height: 20px; }
@@ -676,12 +694,13 @@ a {
             -ms-transform: translateY(-50%);
                 transform: translateY(-50%);
         background-image: url("../images/png_sprite/sprite.png");
-        background-position: -69px -41px;
+        background-position: -58px -54px;
         width: 9px;
         height: 6px;
         right: 0; }
     .header__nav-item--title {
-      padding: 5px 10px 5px 10px; }
+      padding: 5px 10px 5px 10px;
+      font-size: 14px; }
   .header__nav-button {
     position: relative;
     background: rgba(255, 255, 255, 0.3);
@@ -699,7 +718,7 @@ a {
       content: "";
       position: absolute;
       background-image: url("../images/png_sprite/sprite.png");
-      background-position: -55px -41px;
+      background-position: 0px -66px;
       width: 14px;
       height: 13px;
       left: 7px;
@@ -847,7 +866,7 @@ a {
       .s-events__item-date::before {
         content: "";
         background-image: url("../images/png_sprite/sprite.png");
-        background-position: -39px -41px;
+        background-position: -58px -41px;
         width: 16px;
         height: 13px;
         position: absolute;

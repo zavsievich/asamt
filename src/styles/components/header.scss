@@ -2,7 +2,7 @@
   &-banner {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
     &__logo {
       transition: 0.3s;
@@ -19,8 +19,7 @@
     }
 
     &__search {
-      position: relative;
-      flex: 0 0 49%;
+      flex: 0 0 44%;
 
       &-input {
         position: relative;
@@ -29,21 +28,26 @@
         line-height: 19px;
         color: $c-text-input;
         border: 2px solid $c-brand;
-        border-radius: 9px;
-        padding: 7px 0 9px 45px;
+        border-radius: 5px;
+        padding: 9px 0 9px 45px;
         border-right: none;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
-
-        &::before {
-          content: "";
-          display: block;
-          @include png-sprite($icon-magnifier);
-        }
       }
 
       &-label {
         font-size: 0;
+        position: relative;
+        display: flex;
+
+        &::before {
+          content: "";
+          position: absolute;
+          @include png-sprite($icon-search);
+          z-index: 1;
+          top: 50%;
+          transform: translate(50%, -50%);
+        }
 
         &:hover {
           opacity: 0.8;
@@ -112,6 +116,7 @@
   &__nav {
     flex: 1 0 70%;
     margin-left: 15%;
+    font-size: 0;
 
     &-wrap {
       display: flex;
@@ -141,6 +146,8 @@
         border: none;
         background: none;
         cursor: pointer;
+        display: flex;
+        align-items: center;
 
         svg {
           width: 20px;
@@ -159,6 +166,7 @@
 
       &--title {
         padding: 5px 10px 5px 10px;
+        font-size: 14px;
       }
     }
 
