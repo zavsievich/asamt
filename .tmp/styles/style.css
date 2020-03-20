@@ -439,9 +439,9 @@ a {
   cursor: pointer; }
   .button:hover, .button:active {
     background: #FF8300;
-    color: white; }
+    color: #FFFFFF; }
   .button:focus {
-    outline: 4px solid rgba(0, 125, 250, 0.6); }
+    outline: 4px solid #007dfa; }
   .button--selected {
     -webkit-border-radius: 5px;
             border-radius: 5px;
@@ -457,7 +457,7 @@ a {
   position: relative;
   font-weight: bold;
   cursor: pointer; }
-  .user-button:after {
+  .user-button::after {
     content: "";
     display: block;
     position: absolute;
@@ -497,7 +497,7 @@ a {
             flex: 0 0 28%; }
     .header-banner__logo svg {
       height: 40px;
-      color: orange; }
+      color: #FF8300; }
     .header-banner__logo:hover {
       opacity: 0.6; }
   .header-banner__search {
@@ -512,7 +512,7 @@ a {
       font-size: 14px;
       line-height: 19px;
       color: #00006f;
-      border: 2px solid orange;
+      border: 2px solid #FF8300;
       -webkit-border-radius: 9px;
               border-radius: 9px;
       padding: 7px 0 9px 45px;
@@ -521,7 +521,7 @@ a {
               border-top-right-radius: 0;
       -webkit-border-bottom-right-radius: 0;
               border-bottom-right-radius: 0; }
-      .header-banner__search-input:before {
+      .header-banner__search-input::before {
         content: "";
         display: block;
         background-image: url("../images/png_sprite/sprite.png");
@@ -534,18 +534,18 @@ a {
         opacity: 0.8; }
     .header-banner__search-btn {
       padding: 10px 18px;
-      background-color: #ff8300;
+      background-color: #FF8300;
       -webkit-border-radius: 0 5px 5px 0;
               border-radius: 0 5px 5px 0;
       border: none;
-      color: white;
+      color: #FFFFFF;
       cursor: pointer;
       -webkit-transition: 0.3s;
       -o-transition: 0.3s;
       transition: 0.3s;
       font-size: 18px; }
       .header-banner__search-btn:hover {
-        background-color: orange; }
+        background-color: #FF8300; }
   .header-banner__user {
     display: -webkit-box;
     display: -webkit-flex;
@@ -572,7 +572,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  background-color: #ff8300;
+  background-color: #FF8300;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05), 0 10px 20px rgba(0, 0, 0, 0.08);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05), 0 10px 20px rgba(0, 0, 0, 0.08); }
   .header__basis-reset {
@@ -650,7 +650,7 @@ a {
     .header__nav-item:first-child {
       margin-left: 0; }
     .header__nav-item--btn {
-      color: #ffffff;
+      color: #FFFFFF;
       position: relative;
       padding: 0 10px;
       border: none;
@@ -673,6 +673,31 @@ a {
         right: 0; }
     .header__nav-item--title {
       padding: 5px 10px 5px 10px; }
+  .header__nav-button {
+    position: relative;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #ef7b00;
+    -webkit-border-radius: 60px;
+            border-radius: 60px;
+    color: #FFFFFF;
+    padding: 7px 15px 7px 35px;
+    cursor: pointer;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 22%;
+        -ms-flex: 0 0 22%;
+            flex: 0 0 22%; }
+    .header__nav-button::before {
+      content: "";
+      position: absolute;
+      background-image: url("../images/png_sprite/sprite.png");
+      background-position: -55px -41px;
+      width: 14px;
+      height: 13px;
+      left: 7px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
 
 .s-events {
   margin-top: 60px; }
@@ -719,13 +744,13 @@ a {
     .s-events__item-icon {
       width: 50px;
       height: 50px;
-      background-color: orange;
+      background-color: #FF8300;
       -webkit-border-radius: 50%;
               border-radius: 50%;
       -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
               transform: translateY(-50%);
-      border: 2px solid white;
+      border: 2px solid #FFFFFF;
       position: absolute;
       right: 10px;
       color: #FFFFFF;
@@ -774,13 +799,13 @@ a {
       position: relative;
       font-size: 12px;
       line-height: 16px;
-      color: rgba(0, 0, 0, 0.6);
+      color: #000000;
       border-top: 0.5px solid #E2E2E5;
       padding-top: 12px;
       padding-bottom: 12px;
       padding-left: 35px;
       font-weight: bold; }
-      .s-events__item-date:before {
+      .s-events__item-date::before {
         content: "";
         background-image: url("../images/png_sprite/sprite.png");
         background-position: -39px -41px;
