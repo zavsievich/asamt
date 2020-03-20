@@ -7,7 +7,7 @@
   font-weight: bold;
   cursor: pointer;
 
-  &:after {
+  &::after {
     content: "";
     display: block;
     position: absolute;

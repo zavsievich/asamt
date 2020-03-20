@@ -81,7 +81,7 @@
       padding-left: 35px;
       font-weight: bold;
 
-      &:before {
+      &::before {
         content: "";
         @include png-sprite($icon-calendar);
         position: absolute;

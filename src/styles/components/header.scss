@@ -35,7 +35,7 @@
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
 
-        &:before {
+        &::before {
           content: "";
           display: block;
           @include png-sprite($icon-magnifier);
@@ -140,7 +140,7 @@
       cursor: pointer;
       flex: 0 0 22%;
 
-      &:before {
+      &:s:before {
         content: "";
         position: absolute;
         @include png-sprite($icon-round-arrow);
