@@ -17,12 +17,18 @@
   &__item {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 17%;
     position: relative;
     border: 1px solid $c-border;
     border-radius: 5px;
     list-style-type: none;
     margin: 15px;
+
+    &-wrap {
+      display: flex;
+      flex-direction: column;
+    }
 
     &-icon {
       width: 50px;
@@ -36,6 +42,7 @@
       color: $c-white;
       display: flex;
       align-items: center;
+      top: 50%;
 
       svg {
         height: 30px;

@@ -1,7 +1,7 @@
 .button {
-  padding: 14px 46px;
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;
+  width: 179px;
+  padding: 14px 0;
+  border-radius: 5px;
   border: 1px solid $c-border-button;
   background: $c-background-button;
 
@@ -11,6 +11,18 @@
   color: $c-text-button;
   transition: .3s;
   cursor: pointer;
+
+  &:nth-child(2) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+  }
+
+  &:nth-child(3) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+  }
 
   &:hover, &:active {
     background: $c-brand;

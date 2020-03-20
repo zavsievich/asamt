@@ -1,8 +1,8 @@
 {% if not args %}
-{% set args = {
+    {% set args = {
         switch : [
             {
-                categories : 'All s-events',
+                categories : 'All events',
                 selected : 'selected',
             },
             {
@@ -121,25 +121,27 @@
         <h2 class="visually-hidden">Events</h2>
         <div class="s-events__categories">
             {% for item in args.switch %}
-            <button
-                class="s-events__categories-button button button--{{ item.selected }}">{{ item.categories }}</button>
+                <button
+                        class="s-events__categories-button button button--{{ item.selected }}">{{ item.categories }}</button>
             {% endfor %}
         </div>
         <ul class="s-events__list">
             {% for item in args.items %}
-            <li class="s-events__item s-events__item--{{ item.type }}">
-                <img src="{{ item.camelCase }}" alt="{{ item.alt }}" class="s-events__item-logo">
-                <div class="s-events__item-description">
-                    <p class="s-events__item-text">{{ item.place }}</p>
-                    <h3 class="s-events__item-title">{{ item.event }}</h3>
-                    <time datetime="{{ item.datetime }}" class="s-events__item-date">{{ item.date }}</time>
-                    <div class="s-events__item-icon">
-                        <svg class="el-icon">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ item.typeIcon }}"></use>
-                        </svg>
+                <li class="s-events__item s-events__item--{{ item.type }}">
+                    <div class="s-events__item-wrap">
+                        <img src="{{ item.camelCase }}" alt="{{ item.alt }}" class="s-events__item-logo">
+                        <div class="s-events__item-icon">
+                            <svg class="el-icon">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="{{ item.typeIcon }}"></use>
+                            </svg>
+                        </div>
+                        <div class="s-events__item-description">
+                            <p class="s-events__item-text">{{ item.place }}</p>
+                            <h3 class="s-events__item-title">{{ item.event }}</h3>
+                        </div>
                     </div>
-                </div>
-            </li>
+                    <time datetime="{{ item.datetime }}" class="s-events__item-date">{{ item.date }}</time>
+                </li>
             {% endfor %}
         </ul>
     </div>
