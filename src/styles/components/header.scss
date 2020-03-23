@@ -19,7 +19,7 @@
     }
 
     &__search {
-      flex: 0 0 44%;
+      flex: 1 0 auto;
 
       &-input {
         position: relative;
@@ -75,7 +75,7 @@
       align-items: center;
       position: relative;
       cursor: pointer;
-      flex: 0 0 22%;
+      flex: 0 0 18%;
     }
   }
 
