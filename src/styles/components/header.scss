@@ -2,11 +2,10 @@
   &-banner {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
     &__logo {
       transition: 0.3s;
-      flex: 0 0 28%;
 
       svg {
         height: 40px;
@@ -19,7 +18,7 @@
     }
 
     &__search {
-      flex: 1 0 auto;
+      min-width: 550px;
       display: flex;
       position: relative;
 
@@ -67,9 +66,9 @@
       align-items: center;
       position: relative;
       cursor: pointer;
-      flex: 0 0 18%;
       background-color: $c-white;
       border: none;
+      margin-right: 25px;
 
       &-name {
         border: none;
