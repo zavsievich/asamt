@@ -659,6 +659,12 @@ a {
     display: -ms-flexbox;
     display: flex;
     padding: 20px 10px; }
+    .header__nav-item:nth-child(2) {
+      margin-left: 20px;
+      margin-right: 10px; }
+    .header__nav-item:nth-child(3) {
+      margin-left: 10px;
+      margin-right: 20px; }
     .header__nav-item--btn {
       color: #FFFFFF;
       position: relative;
