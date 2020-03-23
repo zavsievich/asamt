@@ -192,7 +192,7 @@
                             </div>
                             <div class="s-events__item-description">
                                 <p class="s-events__item-text">{{ item.place }}</p>
-                                <h3 class="s-events__item-title">{{ item.event }}</h3>
+                                <h3 class="s-events__item-title"><a href="{{ item.link }}">{{ item.event }}</a></h3>
                             </div>
                         </div>
                         <time datetime="{{ item.datetime }}" class="s-events__item-date">{{ item.date }}</time>

@@ -24,6 +24,28 @@
     border-radius: 5px;
     list-style-type: none;
     margin: 15px;
+    transition: .3s;
+
+    a:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    a:focus {
+      text-decoration: underline;
+    }
+
+    &:focus-within {
+      box-shadow: 0 0 0 0.10rem $c-brand;
+    }
+
+    &:focus-within a:focus {
+      text-decoration: none;
+    }
 
     &-wrap {
       display: flex;

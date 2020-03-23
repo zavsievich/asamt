@@ -419,7 +419,8 @@ svg {
   margin: -1px; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #000000; }
 
 .button {
   width: 179px;
@@ -772,7 +773,24 @@ a {
     -webkit-border-radius: 5px;
             border-radius: 5px;
     list-style-type: none;
-    margin: 15px; }
+    margin: 15px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+    .s-events__item a:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0; }
+    .s-events__item a:focus {
+      text-decoration: underline; }
+    .s-events__item:focus-within {
+      -webkit-box-shadow: 0 0 0 0.1rem #FF8300;
+              box-shadow: 0 0 0 0.1rem #FF8300; }
+    .s-events__item:focus-within a:focus {
+      text-decoration: none; }
     .s-events__item-wrap {
       display: -webkit-box;
       display: -webkit-flex;
