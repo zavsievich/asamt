@@ -20,6 +20,17 @@
 
     &__search {
       flex: 1 0 auto;
+      display: flex;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        @include png-sprite($icon-search);
+        z-index: 1;
+        top: 50%;
+        transform: translate(50%, -50%);
+      }
 
       &-input {
         position: relative;
@@ -33,25 +44,6 @@
         border-right: none;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
-      }
-
-      &-label {
-        font-size: 0;
-        position: relative;
-        display: flex;
-
-        &::before {
-          content: "";
-          position: absolute;
-          @include png-sprite($icon-search);
-          z-index: 1;
-          top: 50%;
-          transform: translate(50%, -50%);
-        }
-
-        &:hover {
-          opacity: 0.8;
-        }
       }
 
       &-btn {
