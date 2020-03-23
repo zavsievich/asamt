@@ -33,9 +33,9 @@
     outline: 4px solid $c-accent-focus;
   }
 
-  &--selected {
+  &--active {
     border-radius: 5px;
-    background-color: $c-background-selected-button;
+    background-color: $c-switch-active;
     color: $c-white;
     z-index: 1;
   }

@@ -452,7 +452,7 @@ a {
     color: #FFFFFF; }
   .button:focus {
     outline: 4px solid #007dfa; }
-  .button--selected {
+  .button--active {
     -webkit-border-radius: 5px;
             border-radius: 5px;
     background-color: #1D24AB;
