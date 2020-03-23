@@ -42,19 +42,17 @@
         </h1>
         <div class="header-banner__search">
             <form class="header-banner__search" method="get">
-                <label for="search" class="header-banner__search-label">
-                    <input type="search" class="header-banner__search-input" id="search"
-                           name="search" placeholder="I'm looking for...">
-                    <button class="header-banner__search-btn" type="submit">{{ args.button }}</button>
-                </label>
+                <input type="search" class="header-banner__search-input" id="search"
+                       name="search" placeholder="I'm looking for...">
+                <button class="header-banner__search-btn" type="submit">{{ args.button }}</button>
             </form>
         </div>
-        <div class="header-banner__user">
-            <div class="header__user-avatar"><img src="{{ args.avatar }}" alt="avatar"></div>
-            <button class="user-button">{{ args.name }}</button>
-        </div>
+        <button class="header-banner__user">
+            <img src="{{ args.avatar }}" alt="avatar">
+            <span class="header-banner__user-name">{{ args.name }}</span>
+        </button>
     </div>
-    <div class="header__basis">
+    <div class="header__basis clearfix">
         <nav class="header__nav">
             <ul class="header__nav-list">
                 {% for item in args.nav %}
