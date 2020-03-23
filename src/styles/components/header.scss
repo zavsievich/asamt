@@ -80,16 +80,18 @@
   }
 
   &__basis {
-    display: flex;
+    display: inline-block;
     align-items: center;
     position: relative;
     background-color: $c-brand;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05), 0 10px 20px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    text-align: center;
 
     &-reset {
-      display: flex;
-      justify-content: center;
-      flex: 0 0 15%;
+      display: inline-block;
+      float: right;
+      transform: translateX(-100px);
     }
 
     &-btn {
@@ -100,7 +102,7 @@
       color: white;
       padding: 7px 15px 7px 35px;
       cursor: pointer;
-      flex: 0 0 22%;
+      margin: 16px 0;
 
       &:before {
         content: "";
@@ -114,9 +116,9 @@
   }
 
   &__nav {
-    flex: 1 0 70%;
-    margin-left: 15%;
     font-size: 0;
+    display: inline-block;
+    margin-right: -80px;
 
     &-wrap {
       display: flex;
@@ -127,17 +129,14 @@
       justify-content: center;
       align-items: center;
       position: relative;
+      padding: 0;
+      margin: 0;
     }
 
     &-item {
       list-style-type: none;
       display: flex;
       padding: 20px 10px;
-      margin-left: 6%;
-
-      &:first-child {
-        margin-left: 0;
-      }
 
       &--btn {
         color: $c-white;
@@ -167,26 +166,6 @@
       &--title {
         padding: 5px 10px 5px 10px;
         font-size: 14px;
-      }
-    }
-
-    &-button {
-      position: relative;
-      background: rgba(255, 255, 255, 0.3);
-      border: 1px solid #ef7b00;
-      border-radius: 60px;
-      color: $c-white;
-      padding: 7px 15px 7px 35px;
-      cursor: pointer;
-      flex: 0 0 22%;
-
-      &::before {
-        content: "";
-        position: absolute;
-        @include png-sprite($icon-round-arrow);
-        left: 7px;
-        top: 50%;
-        transform: translateY(-50%);
       }
     }
   }
