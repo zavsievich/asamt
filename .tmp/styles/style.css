@@ -814,7 +814,9 @@ a {
       -webkit-transition: .3s;
       -o-transition: .3s;
       transition: .3s;
-      height: 134px; }
+      height: 134px;
+      -o-object-fit: contain;
+         object-fit: contain; }
     .s-events__item-description {
       display: -webkit-box;
       display: -webkit-flex;
