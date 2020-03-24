@@ -30,26 +30,28 @@
     } %}
 {% endif %}
 <header class="header">
-    <div class="header-banner">
-        <h1 class="header-banner__logo">
-            <a href="/">
-                <svg class="el-icon">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use>
-                </svg>
-                <span class="visually-hidden">Asamt</span>
-            </a>
-        </h1>
-        <form class="header-banner__search" method="get">
-            <input type="search" class="header-banner__search-input" id="search"
-                   name="search" placeholder="I'm looking for...">
-            <button class="header-banner__search-btn" type="submit">{{ args.btn }}</button>
-        </form>
-        <button class="header-banner__user">
-            <img src="{{ args.avatar }}" alt="avatar">
-            <span class="header-banner__user-name">{{ args.name }}</span>
-        </button>
+    <div class="banner__container">
+        <div class="header-banner">
+            <h1 class="header-banner__logo">
+                <a href="/">
+                    <svg class="el-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use>
+                    </svg>
+                    <span class="visually-hidden">Asamt</span>
+                </a>
+            </h1>
+            <form class="header-banner__search" method="get">
+                <input type="search" class="header-banner__search-input" id="search"
+                       name="search" placeholder="I'm looking for...">
+                <button class="header-banner__search-btn" type="submit">{{ args.btn }}</button>
+            </form>
+            <button class="header-banner__user">
+                <img src="{{ args.avatar }}" alt="avatar">
+                <span class="header-banner__user-name">{{ args.name }}</span>
+            </button>
+        </div>
     </div>
-    <div class="header__basis clearfix">
+    <div class="header__basis">
         <nav class="header__nav">
             <ul class="header__nav-list">
                 {% for item in args.nav %}

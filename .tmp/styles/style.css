@@ -403,6 +403,10 @@ template {
 body {
   font-family: 'Nunito', sans-serif; }
 
+.banner__container {
+  max-width: 1900px;
+  margin: 0 20px; }
+
 .container {
   max-width: 1380px;
   margin: 0 auto;
@@ -421,14 +425,6 @@ svg {
 a {
   text-decoration: none;
   color: #000000; }
-
-.clearfix {
-  overflow: hidden; }
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table; }
 
 .s-events__categories-btn {
   width: 179px;
@@ -496,7 +492,7 @@ a {
     display: -ms-flexbox;
     display: flex;
     position: relative;
-    padding: 0 20px; }
+    margin: 0 20px; }
     .header-banner__search::before {
       content: "";
       position: absolute;
@@ -551,7 +547,6 @@ a {
     cursor: pointer;
     background-color: #FFFFFF;
     border: none;
-    margin-right: 25px;
     max-width: 300px; }
     .header-banner__user-name {
       border: none;

@@ -21,7 +21,7 @@
       min-width: 550px;
       display: flex;
       position: relative;
-      padding: 0 20px;
+      margin: 0 20px;
 
       &::before {
         content: "";
@@ -69,7 +69,6 @@
       cursor: pointer;
       background-color: $c-white;
       border: none;
-      margin-right: 25px;
       max-width: 300px;
 
       &-name {
