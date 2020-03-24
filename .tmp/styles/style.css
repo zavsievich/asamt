@@ -436,9 +436,10 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 1900px;
-  padding: 0 20px; }
+  padding: 0.67rem 20px; }
 
 .header-banner__logo {
+  margin: 0;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s; }
