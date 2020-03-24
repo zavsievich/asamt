@@ -173,22 +173,22 @@
             <div class="s-events__categories">
                 {% for item in args.switch %}
                     {% if item.selected %}
-                    <button class="s-events__categories-button button button--active">
-                        {{ item.categories }}
-                    </button>
+                        <button class="s-events__categories-btn s-events__categories-btn--active">
+                            {{ item.categories }}
+                        </button>
                     {% else %}
-                    <button class="s-events__categories-button button">
-                        {{ item.categories }}
-                    </button>
-                    {% endif %} 
+                        <button class="s-events__categories-btn">
+                            {{ item.categories }}
+                        </button>
+                    {% endif %}
                 {% endfor %}
             </div>
             <ul class="s-events__list">
                 {% for item in args.items %}
                     <li class="s-events__item s-events__item--{{ item.type }}">
                         <div class="s-events__item-wrap">
-                            <div class="s-events__item-images">
-                                <img src="{{ item.imgUrl }}" alt="{{ item.alt }}" class="s-events__item-logo">
+                            <div class="s-events__item-picture">
+                                <img src="{{ item.imgUrl }}" alt="{{ item.alt }}" class="s-events__item-img">
                                 <div class="s-events__item-icon">
                                     <svg class="el-icon">
                                         <use xmlns:xlink="http://www.w3.org/1999/xlink"

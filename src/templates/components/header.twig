@@ -1,7 +1,7 @@
 {% if not args %}
     {% set args = {
         avatar: 'images/img/ava.png',
-        button: 'Go!',
+        btn: 'Go!',
         name : 'Robert Singer',
         nav:
         [
@@ -29,7 +29,6 @@
         buttonNav : 'Reset',
     } %}
 {% endif %}
-
 <header class="header">
     <div class="header-banner">
         <h1 class="header-banner__logo">
@@ -44,7 +43,7 @@
             <form class="header-banner__search" method="get">
                 <input type="search" class="header-banner__search-input" id="search"
                        name="search" placeholder="I'm looking for...">
-                <button class="header-banner__search-btn" type="submit">{{ args.button }}</button>
+                <button class="header-banner__search-btn" type="submit">{{ args.btn }}</button>
             </form>
         </div>
         <button class="header-banner__user">
