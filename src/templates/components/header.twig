@@ -2,7 +2,7 @@
     {% set args = {
         avatar: 'images/img/ava.png',
         btn: 'Go!',
-        name : 'Robert Singer ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff',
+        name : 'Robert Singer',
         nav:
         [
             {
@@ -39,13 +39,11 @@
                 <span class="visually-hidden">Asamt</span>
             </a>
         </h1>
-        <div class="header-banner__search">
-            <form class="header-banner__search" method="get">
-                <input type="search" class="header-banner__search-input" id="search"
-                       name="search" placeholder="I'm looking for...">
-                <button class="header-banner__search-btn" type="submit">{{ args.btn }}</button>
-            </form>
-        </div>
+        <form class="header-banner__search" method="get">
+            <input type="search" class="header-banner__search-input" id="search"
+                   name="search" placeholder="I'm looking for...">
+            <button class="header-banner__search-btn" type="submit">{{ args.btn }}</button>
+        </form>
         <button class="header-banner__user">
             <img src="{{ args.avatar }}" alt="avatar">
             <span class="header-banner__user-name">{{ args.name }}</span>
