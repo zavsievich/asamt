@@ -15,9 +15,12 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
-.banner__container {
+.header-banner__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   max-width: 1900px;
-  margin: 0 20px;
+  padding: 0 20px;
 }
 .container {
   max-width: 1380px;

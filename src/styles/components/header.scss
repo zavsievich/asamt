@@ -1,9 +1,5 @@
 .header {
   &-banner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
     &__logo {
       transition: 0.3s;
 
@@ -67,13 +63,13 @@
       align-items: center;
       position: relative;
       cursor: pointer;
-      background-color: $c-white;
+      background-color: transparent;
       border: none;
       max-width: 300px;
 
       &-name {
         border: none;
-        background-color: $c-white;
+        background-color: transparent;
         padding: 20px;
         padding-right: 40px;
         position: relative;
