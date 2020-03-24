@@ -692,7 +692,6 @@ a {
 .s-events {
   margin-top: 60px; }
   .s-events__list {
-<<<<<<< HEAD
     margin-top: 50px;
     position: relative;
     display: -webkit-box;
@@ -701,19 +700,8 @@ a {
     display: flex;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
-=======
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    justify-items: center;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-    margin-top: 50px;
-    position: relative; }
->>>>>>> dev
+    justify-items: center; }
   .s-events__categories {
     display: -webkit-box;
     display: -webkit-flex;
@@ -742,7 +730,6 @@ a {
     -webkit-border-radius: 5px;
             border-radius: 5px;
     list-style-type: none;
-<<<<<<< HEAD
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
@@ -751,16 +738,6 @@ a {
         -ms-flex: 1 0 320px;
             flex: 1 0 320px;
     margin: 0.65%; }
-=======
-    -webkit-transition: .3s;
-    -o-transition: .3s;
-    transition: .3s;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 0 17%;
-        -ms-flex: 1 0 17%;
-            flex: 1 0 17%;
-    margin: 1%; }
->>>>>>> dev
     .s-events__item a {
       outline: none; }
     .s-events__item a:after {
@@ -831,21 +808,12 @@ a {
               border-top-left-radius: 5px;
       -webkit-border-top-right-radius: 5px;
               border-top-right-radius: 5px;
-<<<<<<< HEAD
-      -webkit-transition: 0.3s;
-      -o-transition: 0.3s;
-      transition: 0.3s;
-      height: 134px;
-      -o-object-fit: contain;
-         object-fit: contain; }
-=======
       -webkit-transition: .3s;
       -o-transition: .3s;
       transition: .3s;
       height: 140px;
       -o-object-fit: cover;
          object-fit: cover; }
->>>>>>> dev
     .s-events__item-description {
       display: -webkit-box;
       display: -webkit-flex;
