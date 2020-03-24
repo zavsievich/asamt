@@ -2,11 +2,11 @@
   margin-top: 60px;
 
   &__list {
-    display: flex;
-    justify-items: center;
-    flex-wrap: wrap;
     margin-top: 50px;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
   }
 
   &__categories {
@@ -22,9 +22,9 @@
     border: 1px solid $c-border;
     border-radius: 5px;
     list-style-type: none;
-    transition: .3s;
-    flex: 1 0 17%;
-    margin: 1%;
+    transition: 0.3s;
+    flex: 1 0 320px;
+    margin: 0.65%;
 
     a {
       outline: none;
@@ -44,7 +44,7 @@
     }
 
     &:focus-within {
-      box-shadow: 0 0 0 0.20rem $c-brand;
+      box-shadow: 0 0 0 0.2rem $c-brand;
     }
 
     &:focus-within a:focus {
@@ -88,6 +88,7 @@
       transition: .3s;
       height: 140px;
       object-fit: cover;
+
     }
 
     &-description {
@@ -131,6 +132,24 @@
 
     &-date {
       margin-left: 10px;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    &__item {
+      max-width: 31.7%;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    &__item {
+      max-width: 23.5%;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    &__item {
+      max-width: 18.7%;
     }
   }
 }
