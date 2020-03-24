@@ -173,14 +173,14 @@
             <div class="s-events__categories">
                 {% for item in args.switch %}
                     {% if item.selected %}
-                    <button class="s-events__categories-button button button--active">
-                        {{ item.categories }}
-                    </button>
+                        <button class="s-events__categories-btn s-events__categories-btn--active">
+                            {{ item.categories }}
+                        </button>
                     {% else %}
-                    <button class="s-events__categories-button button">
-                        {{ item.categories }}
-                    </button>
-                    {% endif %} 
+                        <button class="s-events__categories-btn">
+                            {{ item.categories }}
+                        </button>
+                    {% endif %}
                 {% endfor %}
             </div>
             <ul class="s-events__list">

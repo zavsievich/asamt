@@ -430,7 +430,7 @@ a {
   clear: both;
   display: table; }
 
-.button {
+.s-events__categories-btn {
   width: 179px;
   padding: 14px 10px;
   -webkit-border-radius: 5px;
@@ -445,22 +445,22 @@ a {
   -o-transition: .3s;
   transition: .3s;
   cursor: pointer; }
-  .button:nth-child(2) {
+  .s-events__categories-btn:nth-child(2) {
     -webkit-border-top-right-radius: 0;
             border-top-right-radius: 0;
     -webkit-border-bottom-right-radius: 0;
             border-bottom-right-radius: 0; }
-  .button:nth-child(3) {
+  .s-events__categories-btn:nth-child(3) {
     -webkit-border-top-left-radius: 0;
             border-top-left-radius: 0;
     -webkit-border-bottom-left-radius: 0;
             border-bottom-left-radius: 0; }
-  .button:hover, .button:active {
+  .s-events__categories-btn:hover, .s-events__categories-btn:active {
     background: #FF8300;
     color: #FFFFFF; }
-  .button:focus {
+  .s-events__categories-btn:focus {
     outline: 4px solid #007dfa; }
-  .button--active {
+  .s-events__categories-btn--active {
     -webkit-border-radius: 5px;
             border-radius: 5px;
     background-color: #1D24AB;
