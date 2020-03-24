@@ -12,6 +12,47 @@
   &__categories {
     display: flex;
     justify-content: center;
+
+    &-btn {
+      width: 179px;
+      padding: 14px 10px;
+      border-radius: 5px;
+      border: 1px solid $c-border-button;
+      background: $c-background-button;
+
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      color: $c-text-button;
+      transition: .3s;
+      cursor: pointer;
+
+      &:nth-child(2) {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      &:nth-child(3) {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+
+      &:hover, &:active {
+        background: $c-brand;
+        color: $c-white;
+      }
+
+      &:focus {
+        outline: 4px solid $c-accent-focus;
+      }
+
+      &--active {
+        border-radius: 5px;
+        background-color: $c-switch-active;
+        color: $c-white;
+        z-index: 1;
+      }
+    }
   }
 
   &__item {
