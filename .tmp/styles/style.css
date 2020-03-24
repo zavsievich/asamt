@@ -495,7 +495,8 @@ a {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    position: relative; }
+    position: relative;
+    padding: 0 20px; }
     .header-banner__search::before {
       content: "";
       position: absolute;
