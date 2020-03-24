@@ -69,6 +69,7 @@
       background-color: $c-white;
       border: none;
       margin-right: 25px;
+      max-width: 300px;
 
       &-name {
         border: none;
@@ -78,6 +79,9 @@
         position: relative;
         font-weight: bold;
         cursor: pointer;
+        text-overflow: clip;
+        word-wrap: break-word;
+        width: 185px;
 
         &::after {
           content: "";

@@ -550,7 +550,8 @@ a {
     cursor: pointer;
     background-color: #FFFFFF;
     border: none;
-    margin-right: 25px; }
+    margin-right: 25px;
+    max-width: 300px; }
     .header-banner__user-name {
       border: none;
       background-color: #FFFFFF;
@@ -558,7 +559,11 @@ a {
       padding-right: 40px;
       position: relative;
       font-weight: bold;
-      cursor: pointer; }
+      cursor: pointer;
+      -o-text-overflow: clip;
+         text-overflow: clip;
+      word-wrap: break-word;
+      width: 185px; }
       .header-banner__user-name::after {
         content: "";
         display: block;
