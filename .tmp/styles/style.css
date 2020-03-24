@@ -738,17 +738,15 @@ a {
         -ms-flex: 1 0 320px;
             flex: 1 0 320px;
     margin: 0.65%; }
-    .s-events__item a {
+    .s-events__item-link {
       outline: none; }
-    .s-events__item a:after {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      right: 0;
-      bottom: 0; }
-    .s-events__item a:focus {
-      text-decoration: underline; }
+      .s-events__item-link::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0; }
     .s-events__item:focus-within {
       -webkit-box-shadow: 0 0 0 0.2rem #FF8300;
               box-shadow: 0 0 0 0.2rem #FF8300; }
