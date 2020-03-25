@@ -24,7 +24,6 @@
     }
 
     &__search {
-      min-width: 550px;
       display: flex;
       position: relative;
       margin: 0 20px;
@@ -60,7 +59,6 @@
         color: $c-white;
         cursor: pointer;
         transition: 0.3s;
-        font-size: 18px;
 
         &:hover {
           background-color: $c-brand;
@@ -75,7 +73,6 @@
       cursor: pointer;
       background-color: transparent;
       border: none;
-      max-width: 300px;
 
       &-name {
         border: none;
@@ -160,17 +157,6 @@
     &-item {
       list-style-type: none;
       display: flex;
-      padding: 20px 10px;
-
-      &:nth-child(2) {
-        margin-left: 30px;
-        margin-right: 10px;
-      }
-
-      &:nth-child(3) {
-        margin-left: 30px;
-        margin-right: 30px;
-      }
 
       &--btn {
         color: $c-white;
@@ -418,7 +404,7 @@
         margin-right: -40px;
 
         &-btn {
-          font-size: 16px;
+          font-size: 18px;
         }
       }
 
