@@ -751,7 +751,7 @@ a {
     width: 153px; }
   .header-banner__search {
     min-width: 500px;
-    margin-right: -59px; }
+    margin-right: -37px; }
     .header-banner__search-input {
       padding: 8px 0 8px 48px; }
     .header-banner__search-btn {
@@ -777,7 +777,7 @@ a {
 @media screen and (min-width: 1200px) {
   .header-banner__search {
     min-width: 550px;
-    margin-right: -64px; }
+    margin-right: -40px; }
     .header-banner__search-btn {
       font-size: 16px; }
   .header-banner__user {
