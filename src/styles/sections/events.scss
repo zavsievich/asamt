@@ -214,6 +214,7 @@
       &-btn {
         font-size: 14px;
         width: 160px;
+        padding: 14px 10px;
       }
     }
 
@@ -223,6 +224,7 @@
 
     &__item {
       max-width: 31.7%;
+      margin: 0.65%;
 
       &-text {
         font-size: 11px;
@@ -239,7 +241,9 @@
   }
 
   @include media-breakpoint-up(lg) {
+
     margin-top: 50px;
+
     &__list {
       margin-top: 50px;
     }

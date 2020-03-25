@@ -372,6 +372,10 @@
         &-input {
           padding: 8px 0 8px 48px;
         }
+
+        &-btn {
+          padding: 5px 15px 5px 18px;
+        }
       }
 
       &__user {
@@ -379,6 +383,10 @@
 
         &-name {
           max-width: 185px;
+        }
+
+        &-avatar {
+          height: 45px;
         }
       }
     }
@@ -394,7 +402,8 @@
 
     &__nav {
       margin-right: -80px;
-      &-item{
+
+      &-item {
         &--title {
           font-size: 14px;
         }

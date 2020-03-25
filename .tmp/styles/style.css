@@ -754,10 +754,14 @@ a {
     margin-right: -59px; }
     .header-banner__search-input {
       padding: 8px 0 8px 48px; }
+    .header-banner__search-btn {
+      padding: 5px 15px 5px 18px; }
   .header-banner__user {
     max-width: 166px; }
     .header-banner__user-name {
       max-width: 185px; }
+    .header-banner__user-avatar {
+      height: 45px; }
   .header__basis {
     display: inline-block; }
     .header__basis-reset {
@@ -1009,11 +1013,13 @@ a {
       margin-top: 30px; }
       .s-events__categories-btn {
         font-size: 14px;
-        width: 160px; }
+        width: 160px;
+        padding: 14px 10px; }
       .s-events__list {
         margin-top: 30px; }
       .s-events__item {
-        max-width: 31.7%; }
+        max-width: 31.7%;
+        margin: 0.65%; }
         .s-events__item-text {
           font-size: 11px; }
         .s-events__item-title {
