@@ -775,10 +775,8 @@ a {
       margin-right: 30px; } }
 
 .s-events {
-  margin-top: 60px;
   margin-top: 30px; }
   .s-events__list {
-    margin-top: 50px;
     position: relative;
     display: -webkit-box;
     display: -webkit-flex;
@@ -798,7 +796,6 @@ a {
         -ms-flex-pack: center;
             justify-content: center; }
     .s-events__categories-btn {
-      width: 179px;
       padding: 14px 10px;
       -webkit-border-radius: 5px;
               border-radius: 5px;
@@ -946,18 +943,15 @@ a {
               flex-direction: column; }
     .s-events__item-text {
       padding: 10px 10px;
-      font-size: 13px;
       line-height: 18px; }
     .s-events__item-title {
       font-weight: bold;
-      font-size: 18px;
       line-height: 21px;
       color: #000000;
       padding-bottom: 15px;
       padding-left: 10px;
       padding-right: 11px; }
     .s-events__item-day {
-      font-size: 12px;
       line-height: 16px;
       color: #000000;
       border-top: 0.5px solid #E2E2E5;
