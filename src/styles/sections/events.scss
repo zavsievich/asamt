@@ -187,15 +187,15 @@
       margin-bottom: 20px;
 
       &-text {
-        font-size: 9px;
-      }
-
-      &-title {
         font-size: 12px;
       }
 
+      &-title {
+        font-size: 16px;
+      }
+
       &-day {
-        font-size: 9px;
+        font-size: 12px;
       }
     }
   }
@@ -220,18 +220,6 @@
     &__item {
       max-width: 31.7%;
       margin: 0.65%;
-
-      &-text {
-        font-size: 11px;
-      }
-
-      &-title {
-        font-size: 15px;
-      }
-
-      &-day {
-        font-size: 10px;
-      }
     }
   }
 
