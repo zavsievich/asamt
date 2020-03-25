@@ -14,7 +14,6 @@
       transition: 0.3s;
 
       svg {
-        height: 40px;
         color: $c-brand;
       }
 
@@ -40,19 +39,16 @@
       &-input {
         position: relative;
         width: 80%;
-        font-size: 14px;
         line-height: 19px;
         color: $c-text-input;
         border: 2px solid $c-brand;
         border-radius: 5px;
-        padding: 9px 0 9px 45px;
         border-right: none;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
       }
 
       &-btn {
-        padding: 10px 18px;
         background-color: $c-brand;
         border-radius: 0 5px 5px 0;
         border: none;
@@ -77,8 +73,6 @@
       &-name {
         border: none;
         background-color: transparent;
-        padding: 20px;
-        padding-right: 40px;
         position: relative;
         font-weight: bold;
         cursor: pointer;
@@ -101,7 +95,6 @@
   }
 
   &__basis {
-    display: inline-block;
     align-items: center;
     position: relative;
     background-color: $c-brand;
@@ -185,7 +178,6 @@
 
       &--title {
         padding: 5px 10px 5px 10px;
-        font-size: 14px;
       }
     }
   }
@@ -401,7 +393,7 @@
     &-banner {
       &__search {
         min-width: 550px;
-        margin-right: -40px;
+        margin-right: -61px;
 
         &-btn {
           font-size: 18px;
