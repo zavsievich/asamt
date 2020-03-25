@@ -172,7 +172,7 @@
     }
   }
 
-  @include media-breakpoint-up(xsm) {
+  @include media-breakpoint-up(xs) {
     margin-top: 30px;
 
     &__categories {
@@ -180,6 +180,7 @@
       &-btn {
         font-size: 10px;
         width: 90px;
+        padding: 6px;
       }
     }
 
