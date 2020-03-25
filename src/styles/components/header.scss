@@ -367,6 +367,11 @@
 
       &__search {
         min-width: 500px;
+        margin-right: -59px;
+
+        &-input {
+          padding: 8px 0 8px 48px;
+        }
       }
 
       &__user {
@@ -389,6 +394,11 @@
 
     &__nav {
       margin-right: -80px;
+      &-item{
+        &--title {
+          font-size: 14px;
+        }
+      }
     }
   }
 
@@ -410,7 +420,6 @@
     }
 
     &__nav {
-
       &-item {
         padding: 20px 10px;
 

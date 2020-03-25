@@ -750,7 +750,10 @@ a {
     height: 27px;
     width: 153px; }
   .header-banner__search {
-    min-width: 500px; }
+    min-width: 500px;
+    margin-right: -59px; }
+    .header-banner__search-input {
+      padding: 8px 0 8px 48px; }
   .header-banner__user {
     max-width: 166px; }
     .header-banner__user-name {
@@ -763,7 +766,9 @@ a {
           -ms-transform: translateX(-50px);
               transform: translateX(-50px); }
   .header__nav {
-    margin-right: -80px; } }
+    margin-right: -80px; }
+    .header__nav-item--title {
+      font-size: 14px; } }
 
 @media screen and (min-width: 1200px) {
   .header-banner__search {
