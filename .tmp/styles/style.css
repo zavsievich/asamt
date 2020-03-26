@@ -702,9 +702,10 @@ a {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around; }
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .header-banner__logo svg {
   height: 15px;
@@ -718,7 +719,9 @@ a {
           order: 3;
   -webkit-flex-basis: 100%;
       -ms-flex-preferred-size: 100%;
-          flex-basis: 100%; }
+          flex-basis: 100%;
+  margin-top: 30px;
+  margin-bottom: 20px; }
   .header-banner__search-input {
     font-size: 10px;
     padding: 4px 0 4px 35px;
@@ -785,14 +788,14 @@ a {
     height: 20px;
     width: 112px; }
   .header-banner__search {
-    margin-right: 0;
     -webkit-box-ordinal-group: 1;
     -webkit-order: 0;
         -ms-flex-order: 0;
             order: 0;
     -webkit-flex-basis: auto;
         -ms-flex-preferred-size: auto;
-            flex-basis: auto; }
+            flex-basis: auto;
+    margin: 0; }
     .header-banner__search-input {
       padding: 5px 0 5px 30px;
       font-size: 12px;
