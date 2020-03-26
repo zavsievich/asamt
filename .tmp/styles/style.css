@@ -675,7 +675,7 @@ a {
   max-width: 120px;
   font-size: 10px; }
   .header-banner__user-name {
-    padding-right: 10px; }
+    padding-right: 17px; }
   .header-banner__user-avatar {
     height: 35px; }
 
@@ -691,7 +691,8 @@ a {
     border: none;
     background: none;
     color: white;
-    padding: 20px 20px; }
+    padding: 20px 20px;
+    cursor: pointer; }
     .header__nav-toggle--on::before {
       content: '';
       -webkit-box-shadow: 0 6px white, 0 12px white;
@@ -719,7 +720,10 @@ a {
               border-radius: 10px;
       -webkit-transform: rotate(45deg);
           -ms-transform: rotate(45deg);
-              transform: rotate(45deg); }
+              transform: rotate(45deg);
+      -webkit-transition: all .4s linear;
+      -o-transition: all .4s linear;
+      transition: all .4s linear; }
     .header__nav-toggle--off::after {
       content: '';
       position: absolute;
@@ -734,17 +738,27 @@ a {
           -ms-transform: rotate(-45deg);
               transform: rotate(-45deg);
       -webkit-box-shadow: none;
-              box-shadow: none; }
+              box-shadow: none;
+      -webkit-transition: all .4s linear;
+      -o-transition: all .4s linear;
+      transition: all .4s linear; }
   .header__nav-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     .header__nav-list--closed {
       display: none; }
     .header__nav-list--opened {
-      display: block; }
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
   .header__nav-item {
     margin: 0;
     padding: 2px; }
@@ -804,11 +818,15 @@ a {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; }
-    .header__basis-reset {
-      display: none; }
   .header__nav {
     margin: 0 auto; }
+    .header__nav-toggle {
+      display: none; }
     .header__nav-list {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
       -webkit-flex-direction: row;
@@ -856,7 +874,6 @@ a {
 
 @media screen and (min-width: 1200px) {
   .header-banner__search {
-    min-width: 550px;
     margin-right: -61px; }
     .header-banner__search-btn {
       font-size: 18px; }
