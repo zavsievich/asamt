@@ -203,17 +203,13 @@
 
         &-input {
           font-size: 10px;
-          padding: 2px 0 2px 5px;
+          padding: 4px 0 4px 35px;
           width: 100%;
         }
 
         &-btn {
           font-size: 10px;
           padding: 4px 10px 4px 10px;
-        }
-
-        &:before {
-          display: none;
         }
       }
 
@@ -242,6 +238,68 @@
     &__nav {
       margin: 0 auto;
 
+      &-toggle {
+        position: relative;
+        border: none;
+        background: none;
+        color: white;
+        padding: 20px 20px;
+
+        &--on {
+          &::before {
+            content: '';
+            box-shadow: 0 6px white, 0 12px white;
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            background: white;;
+            top: 30%;
+            left: 25%;
+            border-radius: 10px;
+            transition: all .4s linear;
+          }
+        }
+
+        &--off {
+          &::before {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            background: white;
+            top: 44%;
+            left: 25%;
+            border-radius: 10px;
+            transform: rotate(45deg);
+          }
+
+          &::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            background: white;
+            top: 44%;
+            left: 25%;
+            border-radius: 10px;
+            transform: rotate(-45deg);
+            box-shadow: none;
+          }
+        }
+      }
+
+      &-list {
+        flex-direction: column;
+
+        &--closed {
+          display: none;
+        }
+
+        &--opened {
+          display: block;
+        }
+      }
+
       &-item {
         margin: 0;
         padding: 2px;
@@ -256,6 +314,8 @@
         }
 
         &--btn {
+          padding: 10px 14px;
+
           svg {
             display: none;
           }
@@ -293,10 +353,6 @@
         &-btn {
           font-size: 14px;
         }
-
-        &:before {
-          display: block;
-        }
       }
 
       &__user {
@@ -328,9 +384,13 @@
     &__nav {
       margin: 0 auto;
 
+      &-list {
+        flex-direction: row;
+      }
+
       &-item {
         margin: 0;
-        padding: 20px 10px;
+        padding: 11px 10px;
 
         &:nth-child(2), &:nth-child(3) {
           margin: 0;
@@ -424,8 +484,6 @@
 
     &__nav {
       &-item {
-        padding: 20px 10px;
-
         &:nth-child(2) {
           margin-left: 30px;
           margin-right: 10px;
