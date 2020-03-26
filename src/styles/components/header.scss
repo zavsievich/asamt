@@ -142,49 +142,33 @@
       padding: 20px 20px;
       cursor: pointer;
 
-      &--on {
-        &::before {
-          content: '';
-          box-shadow: 0 6px white, 0 12px white;
-          position: absolute;
-          width: 50%;
-          height: 3px;
-          background: white;;
-          top: 30%;
-          left: 25%;
-          border-radius: 10px;
-          transition: all .4s linear;
-        }
+      &::before {
+        content: '';
+        box-shadow: 0 6px white, 0 12px white;
+        position: absolute;
+        width: 50%;
+        height: 3px;
+        background: white;;
+        top: 30%;
+        left: 25%;
+        border-radius: 10px;
+        transition: all .4s linear;
       }
 
-      &--off {
-        &::before {
-          content: '';
-          position: absolute;
-          width: 50%;
-          height: 3px;
-          background: white;
-          top: 44%;
-          left: 25%;
-          border-radius: 10px;
-          transform: rotate(45deg);
-          transition: all .4s linear;
-        }
-
-        &::after {
-          content: '';
-          position: absolute;
-          width: 50%;
-          height: 3px;
-          background: white;
-          top: 44%;
-          left: 25%;
-          border-radius: 10px;
-          transform: rotate(-45deg);
-          box-shadow: none;
-          transition: all .4s linear;
-        }
-      }
+      /*
+            .js-on ::after {
+              content: '';
+              position: absolute;
+              width: 50%;
+              height: 3px;
+              background: white;
+              top: 44%;
+              left: 25%;
+              border-radius: 10px;
+              transform: rotate(-45deg);
+              box-shadow: none;
+              transition: all .4s linear;
+            }*/
     }
 
     &-wrap {
@@ -236,6 +220,9 @@
   }
 
   @include media-breakpoint-up(xs) {
+    .js-on {
+      display: inline;
+    }
     &-banner {
       &__container {
         flex-wrap: wrap;
@@ -296,14 +283,7 @@
       &-list {
         flex-direction: column;
         justify-content: center;
-
-        &--closed {
-          display: none;
-        }
-
-        &--opened {
-          display: flex;
-        }
+        display: none;
       }
 
       &-item {

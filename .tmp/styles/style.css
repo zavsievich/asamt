@@ -588,8 +588,22 @@ a {
     background: none;
     color: white;
     padding: 20px 20px;
-    cursor: pointer; }
-    .header__nav-toggle--on::before {
+    cursor: pointer;
+    /*
+            .js-on ::after {
+              content: '';
+              position: absolute;
+              width: 50%;
+              height: 3px;
+              background: white;
+              top: 44%;
+              left: 25%;
+              border-radius: 10px;
+              transform: rotate(-45deg);
+              box-shadow: none;
+              transition: all .4s linear;
+            }*/ }
+    .header__nav-toggle::before {
       content: '';
       -webkit-box-shadow: 0 6px white, 0 12px white;
               box-shadow: 0 6px white, 0 12px white;
@@ -601,40 +615,6 @@ a {
       left: 25%;
       -webkit-border-radius: 10px;
               border-radius: 10px;
-      -webkit-transition: all .4s linear;
-      -o-transition: all .4s linear;
-      transition: all .4s linear; }
-    .header__nav-toggle--off::before {
-      content: '';
-      position: absolute;
-      width: 50%;
-      height: 3px;
-      background: white;
-      top: 44%;
-      left: 25%;
-      -webkit-border-radius: 10px;
-              border-radius: 10px;
-      -webkit-transform: rotate(45deg);
-          -ms-transform: rotate(45deg);
-              transform: rotate(45deg);
-      -webkit-transition: all .4s linear;
-      -o-transition: all .4s linear;
-      transition: all .4s linear; }
-    .header__nav-toggle--off::after {
-      content: '';
-      position: absolute;
-      width: 50%;
-      height: 3px;
-      background: white;
-      top: 44%;
-      left: 25%;
-      -webkit-border-radius: 10px;
-              border-radius: 10px;
-      -webkit-transform: rotate(-45deg);
-          -ms-transform: rotate(-45deg);
-              transform: rotate(-45deg);
-      -webkit-box-shadow: none;
-              box-shadow: none;
       -webkit-transition: all .4s linear;
       -o-transition: all .4s linear;
       transition: all .4s linear; }
@@ -698,6 +678,9 @@ a {
     .header__nav-item--title {
       padding: 5px 10px 5px 10px; }
 
+.header .js-on {
+  display: inline; }
+
 .header-banner__container {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
@@ -754,14 +737,8 @@ a {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center; }
-    .header__nav-list--closed {
-      display: none; }
-    .header__nav-list--opened {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex; }
+            justify-content: center;
+    display: none; }
   .header__nav-item {
     margin: 0;
     padding: 2px; }
