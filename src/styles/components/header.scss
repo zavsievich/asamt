@@ -154,21 +154,6 @@
         border-radius: 10px;
         transition: all .4s linear;
       }
-
-      /*
-            .js-on ::after {
-              content: '';
-              position: absolute;
-              width: 50%;
-              height: 3px;
-              background: white;
-              top: 44%;
-              left: 25%;
-              border-radius: 10px;
-              transform: rotate(-45deg);
-              box-shadow: none;
-              transition: all .4s linear;
-            }*/
     }
 
     &-wrap {
@@ -280,20 +265,20 @@
         margin-bottom: 20px;
 
         &-input {
-          font-size: 10px;
+          font-size: 13px;
           padding: 4px 0 4px 35px;
           width: 100%;
         }
 
         &-btn {
-          font-size: 10px;
+          font-size: 13px;
           padding: 4px 10px 4px 10px;
         }
       }
 
       &__user {
         max-width: 120px;
-        font-size: 10px;
+        font-size: 13px;
 
         &-name {
           padding-right: 17px;
@@ -330,7 +315,7 @@
         }
 
         &--title {
-          font-size: 12px;
+          font-size: 13px;
           padding: 3px 6px 3px 0;
         }
 
