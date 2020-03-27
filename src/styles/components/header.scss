@@ -148,7 +148,7 @@
         position: absolute;
         width: 50%;
         height: 3px;
-        background: white;;
+        background: white;
         top: 30%;
         left: 25%;
         border-radius: 10px;
@@ -220,9 +220,45 @@
   }
 
   @include media-breakpoint-up(xs) {
-    .js-on {
-      display: inline;
+    .is-open {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 3px;
+        background: white;
+        top: 44%;
+        left: 25%;
+        border-radius: 10px;
+        transform: rotate(45deg);
+        box-shadow: none;
+        transition: all .4s linear;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 3px;
+        background: white;
+        top: 44%;
+        left: 25%;
+        border-radius: 10px;
+        transform: rotate(-45deg);
+        box-shadow: none;
+        transition: all .4s linear;
+      }
     }
+
+    .js-nav {
+      display: none;
+
+    }
+
+    .is-on {
+      display: flex;
+    }
+
     &-banner {
       &__container {
         flex-wrap: wrap;
@@ -283,7 +319,6 @@
       &-list {
         flex-direction: column;
         justify-content: center;
-        display: none;
       }
 
       &-item {
@@ -295,8 +330,8 @@
         }
 
         &--title {
-          font-size: 10px;
-          padding: 5px 6px 5px 0;
+          font-size: 12px;
+          padding: 3px 6px 3px 0;
         }
 
         &--btn {
@@ -311,8 +346,10 @@
   }
 
   @include media-breakpoint-up(md) {
+    .header__nav-list {
+      display: flex;
+    }
     &-banner {
-
       &__container {
         justify-content: space-between;
         flex-wrap: nowrap;

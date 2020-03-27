@@ -678,8 +678,52 @@ a {
     .header__nav-item--title {
       padding: 5px 10px 5px 10px; }
 
-.header .js-on {
-  display: inline; }
+.header .is-open:before {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  background: white;
+  top: 44%;
+  left: 25%;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: all .4s linear;
+  -o-transition: all .4s linear;
+  transition: all .4s linear; }
+
+.header .is-open::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  background: white;
+  top: 44%;
+  left: 25%;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: all .4s linear;
+  -o-transition: all .4s linear;
+  transition: all .4s linear; }
+
+.header .js-nav {
+  display: none; }
+
+.header .is-on {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
 
 .header-banner__container {
   -webkit-flex-wrap: wrap;
@@ -737,22 +781,26 @@ a {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center;
-    display: none; }
+            justify-content: center; }
   .header__nav-item {
     margin: 0;
     padding: 2px; }
     .header__nav-item:nth-child(2), .header__nav-item:nth-child(3) {
       margin: 0; }
     .header__nav-item--title {
-      font-size: 10px;
-      padding: 5px 6px 5px 0; }
+      font-size: 12px;
+      padding: 3px 6px 3px 0; }
     .header__nav-item--btn {
       padding: 10px 14px; }
       .header__nav-item--btn svg {
         display: none; }
 
 @media screen and (min-width: 650px) {
+  .header .header__nav-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
   .header-banner__container {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;

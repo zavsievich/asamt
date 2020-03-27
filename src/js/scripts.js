@@ -1,7 +1,8 @@
-function navList() {
-    let navigation = document.getElementById("navList");
-    let btn = document.getElementById('toggle');
-    btn.classList.toggle("js-on-toggle");
-    navigation.classList.toggle("js-on");
+let showList = document.querySelector('.js-toggle');
 
-}
+showList.addEventListener('click', openList);
+ function openList() {
+     let navList = document.querySelector('.js-nav');
+     showList.classList.toggle('is-open');
+     navList.classList.toggle('is-on');
+ }
