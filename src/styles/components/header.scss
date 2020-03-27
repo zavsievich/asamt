@@ -237,7 +237,6 @@
 
     .js-nav {
       display: none;
-
     }
 
     .is-on {
@@ -271,14 +270,14 @@
         }
 
         &-btn {
-          font-size: 13px;
+          font-size: 14px;
           padding: 4px 10px 4px 10px;
         }
       }
 
       &__user {
         max-width: 120px;
-        font-size: 13px;
+        font-size: 14px;
 
         &-name {
           padding-right: 17px;
@@ -315,7 +314,7 @@
         }
 
         &--title {
-          font-size: 13px;
+          font-size: 14px;
           padding: 3px 6px 3px 0;
         }
 
@@ -354,18 +353,12 @@
 
         &-input {
           padding: 5px 0 5px 30px;
-          font-size: 12px;
           width: 310px;
-        }
-
-        &-btn {
-          font-size: 14px;
         }
       }
 
       &__user {
         max-width: 165px;
-        font-size: 14px;
 
         &-avatar {
           height: 37px;
@@ -408,7 +401,6 @@
 
         &--title {
           padding: 5px 10px 5px 10px;
-          font-size: 12px;
         }
 
         &--btn {
@@ -466,12 +458,6 @@
 
     &__nav {
       margin-right: -80px;
-
-      &-item {
-        &--title {
-          font-size: 14px;
-        }
-      }
     }
   }
 

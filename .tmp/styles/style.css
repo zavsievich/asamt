@@ -740,12 +740,12 @@ a {
     padding: 4px 0 4px 35px;
     width: 100%; }
   .header-banner__search-btn {
-    font-size: 13px;
+    font-size: 14px;
     padding: 4px 10px 4px 10px; }
 
 .header-banner__user {
   max-width: 120px;
-  font-size: 13px; }
+  font-size: 14px; }
   .header-banner__user-name {
     padding-right: 17px; }
   .header-banner__user-avatar {
@@ -774,7 +774,7 @@ a {
     .header__nav-item:nth-child(2), .header__nav-item:nth-child(3) {
       margin: 0; }
     .header__nav-item--title {
-      font-size: 13px;
+      font-size: 14px;
       padding: 3px 6px 3px 0; }
     .header__nav-item--btn {
       padding: 10px 14px; }
@@ -809,13 +809,9 @@ a {
     margin: 0; }
     .header-banner__search-input {
       padding: 5px 0 5px 30px;
-      font-size: 12px;
       width: 310px; }
-    .header-banner__search-btn {
-      font-size: 14px; }
   .header-banner__user {
-    max-width: 165px;
-    font-size: 14px; }
+    max-width: 165px; }
     .header-banner__user-avatar {
       height: 37px; }
     .header-banner__user-name {
@@ -852,8 +848,7 @@ a {
       .header__nav-item:nth-child(2), .header__nav-item:nth-child(3) {
         margin: 0; }
       .header__nav-item--title {
-        padding: 5px 10px 5px 10px;
-        font-size: 12px; }
+        padding: 5px 10px 5px 10px; }
       .header__nav-item--btn svg {
         display: block; } }
 
@@ -882,9 +877,7 @@ a {
           -ms-transform: translateX(-50px);
               transform: translateX(-50px); }
   .header__nav {
-    margin-right: -80px; }
-    .header__nav-item--title {
-      font-size: 14px; } }
+    margin-right: -80px; } }
 
 @media screen and (min-width: 1200px) {
   .header-banner__search {
@@ -1106,7 +1099,7 @@ a {
         -ms-flex-align: center;
             align-items: center; }
     .s-events__categories-btn {
-      font-size: 13px;
+      font-size: 14px;
       padding: 6px;
       width: 100%;
       margin: 3px;
@@ -1127,9 +1120,9 @@ a {
     width: 100%;
     margin-bottom: 20px; }
     .s-events__item-text {
-      font-size: 12px; }
+      font-size: 14px; }
     .s-events__item-title {
-      font-size: 16px; }
+      font-size: 18px; }
     .s-events__item-day {
       font-size: 12px; }
   @media screen and (min-width: 650px) {
@@ -1142,7 +1135,6 @@ a {
             -ms-flex-direction: row;
                 flex-direction: row; }
         .s-events__categories-btn {
-          font-size: 14px;
           width: 160px;
           padding: 14px 10px;
           margin: 0; }
@@ -1182,13 +1174,7 @@ a {
       width: 179px;
       font-size: 16px; }
     .s-events__item {
-      max-width: 18.7%; }
-      .s-events__item-text {
-        font-size: 14px; }
-      .s-events__item-title {
-        font-size: 18px; }
-      .s-events__item-day {
-        font-size: 12px; } }
+      max-width: 18.7%; } }
 
 .visible {
   visibility: visible !important; }

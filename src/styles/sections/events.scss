@@ -173,7 +173,7 @@
       align-items: center;
 
       &-btn {
-        font-size: 13px;
+        font-size: 14px;
         padding: 6px;
         width: 100%;
         margin: 3px;
@@ -190,13 +190,13 @@
     &__item {
       width: 100%;
       margin-bottom: 20px;
-
+      
       &-text {
-        font-size: 12px;
+        font-size: 14px;
       }
 
       &-title {
-        font-size: 16px;
+        font-size: 18px;
       }
 
       &-day {
@@ -212,7 +212,6 @@
       flex-direction: row;
 
       &-btn {
-        font-size: 14px;
         width: 160px;
         padding: 14px 10px;
         margin: 0;
@@ -264,18 +263,6 @@
 
     &__item {
       max-width: 18.7%;
-
-      &-text {
-        font-size: 14px;
-      }
-
-      &-title {
-        font-size: 18px;
-      }
-
-      &-day {
-        font-size: 12px;
-      }
     }
   }
 }
