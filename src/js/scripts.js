@@ -1,6 +1,6 @@
 function navWrap() {
     const btnNav = document.querySelector('.js-toggle');
-    let navList = document.querySelector('.js-nav');
+    const navList = document.querySelector('.js-nav');
 
     btnNav.addEventListener('click', toggleNav);
 
