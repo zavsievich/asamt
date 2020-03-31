@@ -7,9 +7,11 @@
             },
             {
                 categories : 'Trending',
+                dataTab : 'tab-2',
             },
             {
                 categories : 'Suggestions',
+                dataTab : 'tab-3',
             }
         ],
         'items' : [
@@ -173,18 +175,18 @@
             <div class="s-events__categories">
                 {% for item in args.switch %}
                     {% if item.selected %}
-                        <button class="s-events__categories-btn s-events__categories-btn--active">
+                        <button class="s-events__categories-btn js-tab is-active" data-tab="tab-1">
                             {{ item.categories }}
                         </button>
                     {% else %}
-                        <button class="s-events__categories-btn">
+                        <button class="s-events__categories-btn js-tab" data-tab='{{ item.dataTab }}'>
                             {{ item.categories }}
                         </button>
                     {% endif %}
                 {% endfor %}
             </div>
-            <ul class="s-events__list">
-                {% for item in args.items %}
+            <ul class="s-events__list tab is-show tab-1">
+                {#{% for item in args.items %}
                     <li class="s-events__item s-events__item--{{ item.type }}">
                         <div class="s-events__item-wrap">
                             <div class="s-events__item-picture">
@@ -209,7 +211,15 @@
                             <time datetime="{{ item.datetime }}" class="s-events__item-date">{{ item.date }}</time>
                         </div>
                     </li>
-                {% endfor %}
+                {% endfor %}#}
+                <li>tab1</li>
+            </ul>
+            <ul class="s-events__list tab tab-2">
+                <li>tab2</li>
+            </ul>
+            <ul class="s-events__list tab tab-3">
+
+                <li>tab3</li>
             </ul>
         </div>
     </section>

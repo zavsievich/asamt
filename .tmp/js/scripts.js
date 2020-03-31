@@ -12,3 +12,29 @@ function navWrap() {
 }
 
 navWrap();
+
+function tab() {
+  var tabNav = document.querySelectorAll('.js-tab'),
+      tabContent = document.querySelectorAll('.tab'),
+      tabName;
+  tabNav.forEach(function (item) {
+    item.addEventListener('click', selectTabNav);
+  });
+
+  function selectTabNav() {
+    tabNav.forEach(function (item) {
+      item.classList.remove('is-active');
+    });
+    this.classList.add('is-active');
+    tabName = this.getAttribute('data-tab');
+    selectTabContent(tabName);
+  }
+
+  function selectTabContent(tabName) {
+    tabContent.forEach(function (item) {
+      item.classList.contains(tabName) ? item.classList.add('is-show') : item.classList.remove('is-show');
+    });
+  }
+}
+
+tab();

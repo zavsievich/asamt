@@ -1,7 +1,7 @@
 .s-events {
   &__list {
     position: relative;
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     justify-items: center;
   }
@@ -167,6 +167,17 @@
 
   @include media-breakpoint-up(xs) {
     margin-top: 30px;
+
+    .is-show {
+      display: block;
+    }
+
+    .is-active {
+      border-radius: 5px;
+      background-color: $c-switch-active;
+      color: $c-white;
+      z-index: 1;
+    }
 
     &__categories {
       flex-direction: column;
