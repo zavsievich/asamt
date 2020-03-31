@@ -14,7 +14,7 @@ navWrap();
 
 function tab() {
     let tabNav = document.querySelectorAll('.js-tab'),
-        tabContent = document.querySelectorAll('.tab'),
+        tabContent = document.querySelectorAll('.js-tab-content'),
         tabName;
 
     tabNav.forEach(item => {

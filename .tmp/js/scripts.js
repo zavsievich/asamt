@@ -15,7 +15,7 @@ navWrap();
 
 function tab() {
   var tabNav = document.querySelectorAll('.js-tab'),
-      tabContent = document.querySelectorAll('.tab'),
+      tabContent = document.querySelectorAll('.js-tab-content'),
       tabName;
   tabNav.forEach(function (item) {
     item.addEventListener('click', selectTabNav);
