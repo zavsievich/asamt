@@ -437,7 +437,8 @@ template {
           box-sizing: border-box; }
 
 body {
-  font-family: 'Nunito', sans-serif; }
+  font-family: 'Nunito', sans-serif;
+  background-color: #E5E5E5; }
 
 .container {
   max-width: 1380px;
@@ -463,7 +464,8 @@ a {
 
 .header {
   -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05), 0px 10px 20px rgba(0, 0, 0, 0.08);
-          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05), 0px 10px 20px rgba(0, 0, 0, 0.08); }
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05), 0px 10px 20px rgba(0, 0, 0, 0.08);
+  background-color: #FFFFFF; }
   .header-banner__container {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1254,6 +1256,57 @@ a {
       font-size: 16px; }
     .s-events__item {
       max-width: 18.7%; } }
+
+.user {
+  margin-top: 60px; }
+  .user-aside {
+    width: 29%;
+    border: 1px solid #E2E2E5;
+    background-color: #FFFFFF;
+    -webkit-border-radius: 5px;
+            border-radius: 5px; }
+    .user-aside__list {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      list-style: none; }
+    .user-aside__item {
+      border-bottom: 1px solid rgba(183, 193, 203, 0.2);
+      margin-left: 10px; }
+    .user-aside__btn {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      background-color: inherit;
+      border: none;
+      width: 100%;
+      position: relative;
+      padding: 5px 0; }
+      .user-aside__btn svg {
+        height: 24px;
+        width: 24px; }
+      .user-aside__btn-title {
+        font-size: 13px;
+        margin-left: 10px; }
+      .user-aside__btn::after {
+        content: "";
+        position: absolute;
+        background-image: url("../images/png_sprite/sprite.png");
+        background-position: -94px -51px;
+        width: 5px;
+        height: 8px;
+        right: 10px; }
 
 .visible {
   visibility: visible !important; }

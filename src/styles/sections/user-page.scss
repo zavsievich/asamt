@@ -1,0 +1,47 @@
+.user {
+  margin-top: 60px;
+
+  &-aside {
+    width: 29%;
+    border: 1px solid $c-border;
+    background-color: $c-white;
+    border-radius: 5px;
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+    }
+
+    &__item {
+      border-bottom: 1px solid rgba(183, 193, 203, 0.2);
+      margin-left: 10px;
+    }
+
+    &__btn {
+      display: flex;
+      align-items: center;
+      background-color: inherit;
+      border: none;
+      width: 100%;
+      position: relative;
+      padding: 5px 0 ;
+      svg {
+        height: 24px;
+        width: 24px;
+      }
+
+      &-title {
+        font-size: 13px;
+        margin-left: 10px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        @include png-sprite($icon-aside);
+        right: 10px;
+      }
+    }
+  }
+}
