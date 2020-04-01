@@ -475,21 +475,27 @@ a {
     opacity: 0.6; }
 
 .header-banner__partner {
-  color: #1825AA;
-  position: relative;
-  padding-left: 27px; }
-  .header-banner__partner::before {
-    content: "";
-    position: absolute;
-    background-image: url("../images/png_sprite/sprite.png");
-    background-position: -20px -41px;
-    width: 23px;
-    height: 16px;
-    left: 0;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%); }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 10px; }
+  .header-banner__partner-link {
+    color: #1825AA;
+    position: relative;
+    padding-left: 27px; }
+    .header-banner__partner-link::before {
+      content: "";
+      position: absolute;
+      background-image: url("../images/png_sprite/sprite.png");
+      background-position: -20px -41px;
+      width: 23px;
+      height: 16px;
+      left: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
 
 .header-banner__search {
   display: -webkit-box;
@@ -769,9 +775,7 @@ a {
     width: 86px; }
 
 .header-banner__partner {
-  height: 9px;
-  padding-left: 0;
-  margin-left: 10px; }
+  margin-top: 5px; }
   .header-banner__partner svg {
     height: 14px;
     width: 73px; }
@@ -853,8 +857,7 @@ a {
     height: 20px;
     width: 112px; }
   .header-banner__partner {
-    margin: 0 10px 5px 10px;
-    padding-left: 27px; }
+    margin-top: 0; }
     .header-banner__partner::before {
       display: block; }
   .header-banner__search {
@@ -912,9 +915,11 @@ a {
         display: block; } }
 
 @media screen and (min-width: 900px) {
-  .header-banner__logo svg {
-    height: 27px;
-    width: 153px; }
+  .header-banner__logo {
+    margin-top: 8px; }
+    .header-banner__logo svg {
+      height: 27px;
+      width: 153px; }
   .header-banner__search {
     margin-right: -8px; }
     .header-banner__search-input {

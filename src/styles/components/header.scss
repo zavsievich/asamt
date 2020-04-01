@@ -32,17 +32,22 @@
     }
 
     &__partner {
-      color: #1825AA;
-      position: relative;
-      padding-left: 27px;
+      display: flex;
+      margin-right: 10px;
 
-      &::before {
-        content: "";
-        position: absolute;
-        @include png-sprite($icon-puzzle);
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
+      &-link {
+        color: #1825AA;
+        position: relative;
+        padding-left: 27px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          @include png-sprite($icon-puzzle);
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
       }
     }
 
@@ -283,9 +288,7 @@
       }
 
       &__partner {
-        height: 9px;
-        padding-left: 0;
-        margin-left: 10px;
+        margin-top: 5px;
         svg {
           height: 14px;
           width: 73px;
@@ -387,8 +390,7 @@
       }
 
       &__partner {
-        margin: 0 10px 5px 10px;
-        padding-left: 27px;
+        margin-top: 0;
 
         &::before {
           display: block;
@@ -464,6 +466,9 @@
   @include media-breakpoint-up(lg) {
     &-banner {
       &__logo {
+
+        margin-top: 8px;
+
         svg {
           height: 27px;
           width: 153px;
