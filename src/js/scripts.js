@@ -14,7 +14,7 @@ navWrap();
 
 /*
 
-OLD JS CODE
+OLD JS CODE  for comparison, delete in a future commit
 
 function tabWrap() {
     const tabNav = document.querySelectorAll('.js-tab'),
