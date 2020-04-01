@@ -1,7 +1,7 @@
 .s-events {
   &__list {
     position: relative;
-    display: none;
+    display: flex;
     flex-wrap: wrap;
     justify-items: center;
   }
@@ -158,8 +158,12 @@
   @include media-breakpoint-up(xs) {
     margin-top: 30px;
 
+    .js-tab-content {
+      display: none;
+    }
+
     .is-show {
-      display: flex;
+      display: block;
     }
 
     .is-active {

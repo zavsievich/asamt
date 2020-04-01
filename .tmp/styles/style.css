@@ -898,7 +898,10 @@ a {
   margin-top: 30px; }
   .s-events__list {
     position: relative;
-    display: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
@@ -1076,11 +1079,10 @@ a {
         margin-left: 10px; }
     .s-events__item-date {
       margin-left: 10px; }
+  .s-events .js-tab-content {
+    display: none; }
   .s-events .is-show {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
+    display: block; }
   .s-events .is-active {
     -webkit-border-radius: 5px;
             border-radius: 5px;

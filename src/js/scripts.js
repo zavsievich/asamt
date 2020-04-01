@@ -13,6 +13,9 @@ function navWrap() {
 navWrap();
 
 /*
+
+OLD JS CODE
+
 function tabWrap() {
     const tabNav = document.querySelectorAll('.js-tab'),
         tabContent = document.querySelectorAll('.js-tab-content');
