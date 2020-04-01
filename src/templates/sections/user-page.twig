@@ -1,0 +1,32 @@
+{% if not args %}
+    {% set args = {
+        items : [
+            {
+                icon: 'profil',
+                category : 'Profil',
+            },
+        ]
+    } %}
+{% endif %}
+
+<main>
+    <div class="container">
+        <section class="user">
+            <div class="user-aside">
+                <ul class="user-aside__list">
+                    {% for item in args.items %}
+                        <li class="user-aside__item">
+                            <button class="user-aside__btn">
+                                <svg class="el-icon">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                         xlink:href="#{{ item.icon }}"></use>
+                                </svg>
+                                <p>{{ item.category }}</p>
+                            </button>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </section>
+    </div>
+</main>
