@@ -51,8 +51,8 @@
   height: 24px; }
 
 .icon-event {
-  width: 24px;
-  height: 24px; }
+  width: 20px;
+  height: 18px; }
 
 .icon-logo {
   width: 178px;
@@ -1292,13 +1292,15 @@ a {
       border: none;
       width: 100%;
       position: relative;
-      padding: 5px 0; }
+      padding: 5px 0;
+      color: #3E3934; }
       .user-aside__btn svg {
         height: 24px;
         width: 24px; }
       .user-aside__btn-title {
         font-size: 13px;
-        margin-left: 10px; }
+        margin-left: 10px;
+        color: black; }
       .user-aside__btn::after {
         content: "";
         position: absolute;
