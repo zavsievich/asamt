@@ -4,10 +4,6 @@
 
 
 
-
-
-
-
 <!doctype html>
 <!--[if lt IE 9]><html class="no-js no-svg ie lt-ie9 lt-ie8 lt-ie7" lang='en'> <![endif]-->
 <!--[if IE 9]><html class="no-js no-svg ie ie9 lt-ie9 lt-ie8" lang='en'> <![endif]-->
@@ -40,15 +36,90 @@
 
 
 	
+    
+    
 
-	
+<header class="header">
+    <div class="header-banner">
+        <div class="header-banner__container">
+            <h1 class="header-banner__logo">
+                <a href="/">
+                    <svg class="el-icon">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use>
+                    </svg>
+                    <span class="visually-hidden">Asamt</span>
+                </a>
+            </h1>
+            <form class="header-banner__search" method="get">
+                <input type="search" class="header-banner__search-input" id="search"
+                       name="search" placeholder="I'm looking for...">
+                <button class="header-banner__search-btn" type="submit">Go!</button>
+            </form>
+            <button class="header-banner__user">
+                <img class="header-banner__user-avatar" src="images/img/ava.png" alt="avatar">
+                <span class="header-banner__user-name">Robert Singer</span>
+            </button>
+        </div>
+    </div>
+    <div class="header__basis hide">
+        <nav class="header__nav">
+            <button class="header__nav-toggle js-toggle">
+                <span class="visually-hidden">Кнопка меню</span>
+            </button>
+            <ul id="navList" class="header__nav-list js-nav">
+                
+                    <li class="header__nav-item">
+                        <button class="header__nav-item--btn" href="#">
+                            <svg class="el-icon">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#drop"></use>
+                            </svg>
+                            <span class="header__nav-item--title">Oslo, Norway</span>
+                        </button>
+                    </li>
+                
+                    <li class="header__nav-item">
+                        <button class="header__nav-item--btn" href="#">
+                            <svg class="el-icon">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#union"></use>
+                            </svg>
+                            <span class="header__nav-item--title">61 km</span>
+                        </button>
+                    </li>
+                
+                    <li class="header__nav-item">
+                        <button class="header__nav-item--btn" href="#">
+                            <svg class="el-icon">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#cubes"></use>
+                            </svg>
+                            <span class="header__nav-item--title">Categories</span>
+                        </button>
+                    </li>
+                
+                    <li class="header__nav-item">
+                        <button class="header__nav-item--btn" href="#">
+                            <svg class="el-icon">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#date"></use>
+                            </svg>
+                            <span class="header__nav-item--title">June 4, 2018</span>
+                        </button>
+                    </li>
+                
+            </ul>
+        </nav>
+        <div class="header__basis-reset">
+            <button class="header__basis-btn" type="button">Reset</button>
+        </div>
+    </div>
+</header>
+
+
 
 
 	<div id="content" class="js-content">
 		<main>
 			
-			
-			
+    
+
 		</main>
 	</div>
 

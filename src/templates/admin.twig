@@ -2,10 +2,10 @@
 
 {% block header %}
     {% include 'components/header.twig' with {
-        state : 'show',
+        state : 'hide',
     }%}
 {% endblock %}
 
-{%block content %}
-{% include 'sections/events.twig' %}
+{% block content %}
+    {% include 'sections/events-edit.twig' %}
 {% endblock %}
