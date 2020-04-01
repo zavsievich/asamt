@@ -12,10 +12,12 @@ function navWrap() {
 
 navWrap();
 
-function tab() {
-    let tabNav = document.querySelectorAll('.js-tab'),
-        tabContent = document.querySelectorAll('.js-tab-content'),
-        tabName;
+/*
+function tabWrap() {
+    const tabNav = document.querySelectorAll('.js-tab'),
+        tabContent = document.querySelectorAll('.js-tab-content');
+
+    let tabName;
 
     tabNav.forEach(item => {
         item.addEventListener('click', selectTabNav)
@@ -38,4 +40,26 @@ function tab() {
     }
 }
 
-tab();
+tabWrap();*/
+
+function tabWrap() {
+    const tabNav = document.querySelectorAll('.js-tab');
+    const tabContents = document.querySelectorAll('.js-tab-content');
+
+    tabNav.forEach(function (trigger) {
+        trigger.addEventListener('click', function () {
+            const id = this.getAttribute('data-tab');
+            const content = document.querySelector('.js-tab-content[data-tab="' + id + '"]');
+            const activeTrigger = document.querySelector('.js-tab.is-active');
+            const activeContent = document.querySelector('.js-tab-content.is-show');
+
+            activeTrigger.classList.remove('is-active');
+            trigger.classList.add('is-active');
+
+            activeContent.classList.remove('is-show');
+            content.classList.add('is-show');
+        })
+    })
+}
+
+tabWrap();

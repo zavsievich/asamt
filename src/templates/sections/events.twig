@@ -7,11 +7,11 @@
             },
             {
                 categories : 'Trending',
-                dataTab : 'tab-2',
+                dataTab : '2',
             },
             {
                 categories : 'Suggestions',
-                dataTab : 'tab-3',
+                dataTab : '3',
             }
         ],
 
@@ -176,7 +176,7 @@
             <div class="s-events__categories">
                 {% for item in args.switch %}
                     {% if item.selected %}
-                        <button class="s-events__categories-btn js-tab is-active" data-tab="tab-1">
+                        <button class="s-events__categories-btn js-tab is-active" data-tab="1">
                             {{ item.categories }}
                         </button>
                     {% else %}
@@ -186,7 +186,7 @@
                     {% endif %}
                 {% endfor %}
             </div>
-            <ul class="s-events__list js-tab-content is-show tab-1">
+            <ul class="s-events__list js-tab-content is-show" data-tab="1">
                 {% for item in args.items %}
                     <li class="s-events__item s-events__item--{{ item.type }}">
                         <div class="s-events__item-wrap">
@@ -215,7 +215,7 @@
                     </li>
                 {% endfor %}
             </ul>
-            <ul class="s-events__list js-tab-content tab-2">
+            <ul class="s-events__list js-tab-content" data-tab="2">
                 {% for item in args.items %}
                     <li class="s-events__item s-events__item--{{ item.type }}">
                         <div class="s-events__item-wrap">
@@ -244,7 +244,7 @@
                     </li>
                 {% endfor %}
             </ul>
-            <ul class="s-events__list js-tab-content tab-3">
+            <ul class="s-events__list js-tab-content" data-tab="3">
                 {% for item in args.items %}
                     <li class="s-events__item s-events__item--{{ item.type }}">
                         <div class="s-events__item-wrap">
