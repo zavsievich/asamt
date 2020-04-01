@@ -1,6 +1,7 @@
 .hide {
   display: none;
 }
+
 .header {
   &-banner {
     &__container {
@@ -34,6 +35,7 @@
     &__partner {
       display: flex;
       margin-right: 10px;
+      transition: .3s;
 
       &-link {
         color: #1825AA;
@@ -75,6 +77,10 @@
         border-right: none;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
+
+        &--admin {
+          border-color: $c-border-grey;
+        }
       }
 
       &-btn {
@@ -281,6 +287,7 @@
 
       &__logo {
         margin-right: 10px;
+
         svg {
           height: 15px;
           width: 86px;
@@ -289,6 +296,7 @@
 
       &__partner {
         margin-top: 5px;
+
         svg {
           height: 14px;
           width: 73px;
@@ -376,6 +384,7 @@
     .header__nav-list {
       display: flex;
     }
+
     &-banner {
       &__container {
         justify-content: space-between;
@@ -399,7 +408,7 @@
 
       &__search {
         order: 0;
-        flex-basis: auto;
+        flex-basis: 45%;
         margin: 0;
 
         &-input {
@@ -465,8 +474,12 @@
 
   @include media-breakpoint-up(lg) {
     &-banner {
-      &__logo {
 
+      &__wrap-logo {
+        min-width: 273px;
+      }
+
+      &__logo {
         margin-top: 8px;
 
         svg {
@@ -476,8 +489,6 @@
       }
 
       &__search {
-        margin-right: -8px;
-
         &-input {
           padding: 8px 0 8px 48px;
           width: 360px;
@@ -517,9 +528,20 @@
 
   @include media-breakpoint-up(xl) {
     &-banner {
-      &__search {
-        margin-right: -61px;
 
+      &__wrap-logo {
+        width: 30%;
+      }
+
+      &__logo {
+        margin-right: 40px;
+      }
+
+      &__partner {
+        margin-left: 40px;
+      }
+
+      &__search {
         &-btn {
           font-size: 18px;
         }
