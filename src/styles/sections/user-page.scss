@@ -26,18 +26,19 @@
       width: 100%;
       position: relative;
       padding: 5px 0;
-      color: #3E3934;
+      transition: .3s;
+      color:  #3E3934;
 
       svg {
         height: 20px;
         width: 20px;
         opacity: 0.5;
+        transition: .3s;
       }
 
       &-title {
         font-size: 13px;
         margin-left: 10px;
-        color: black;
       }
 
       &::after {
@@ -46,6 +47,20 @@
         @include png-sprite($icon-aside);
         right: 10px;
       }
+
+      &:hover {
+        svg {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &-aside__btn.is-active {
+    color: $c-brand;
+
+    svg {
+      opacity: 1;
     }
   }
 }
