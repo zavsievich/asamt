@@ -1228,7 +1228,11 @@ a {
       max-width: 18.7%; } }
 
 .user {
-  margin-top: 60px; }
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
   .user-aside {
     width: 29%;
     border: 1px solid #E2E2E5;

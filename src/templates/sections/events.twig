@@ -16,6 +16,7 @@
         ],
         list: [
             {
+                state: 'is-active',
                 n: '1',
                 title: 'First section',
                 items : [
@@ -339,36 +340,40 @@
                 {% endfor %}
             </div>
             {% for section in args.list %}
-                <section class="s-events__content js-tab-content is-active" data-tab="{{ section.n }}">
+                <section class="s-events__content js-tab-content {{ section.state }}" data-tab="{{ section.n }}">
                     <h3 style="text-align: center; margin-top: 50px;">{{ section.title }}</h3>
                     <ul class="s-events__list">
                         {% for item in section.items %}
                             <li class="s-events__item s-events__item--{{ item.type }}">
-                                <div class="s-events__item-wrap">
-                                    <div class="s-events__item-picture">
-                                        <img src="{{ item.imgUrl }}" alt="{{ item.alt }}" class="s-events__item-img">
-                                        <div class="s-events__item-icon">
-                                            <svg class="el-icon">
-                                                <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                     xlink:href="{{ item.typeIcon }}"></use>
-                                            </svg>
+                                <article class="c-card">
+                                    <div class="s-events__item-wrap">
+                                        <div class="s-events__item-picture">
+                                            <img src="{{ item.imgUrl }}" alt="{{ item.alt }}"
+                                                 class="s-events__item-img">
+                                            <div class="s-events__item-icon">
+                                                <svg class="el-icon">
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                         xlink:href="{{ item.typeIcon }}"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="s-events__item-description">
+                                            <p class="s-events__item-text">{{ item.place }}</p>
+                                            <h3 class="s-events__item-title">
+                                                <a class="s-events__item-link"
+                                                   href="{{ item.link }}">{{ item.event }}</a>
+                                            </h3>
                                         </div>
                                     </div>
-                                    <div class="s-events__item-description">
-                                        <p class="s-events__item-text">{{ item.place }}</p>
-                                        <h3 class="s-events__item-title">
-                                            <a class="s-events__item-link" href="{{ item.link }}">{{ item.event }}</a>
-                                        </h3>
+                                    <div class="s-events__item-day">
+                                        <svg class="el-icon">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                 xlink:href="#date"></use>
+                                        </svg>
+                                        <time datetime="{{ item.datetime }}"
+                                              class="s-events__item-date">{{ item.date }}</time>
                                     </div>
-                                </div>
-                                <div class="s-events__item-day">
-                                    <svg class="el-icon">
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                             xlink:href="#date"></use>
-                                    </svg>
-                                    <time datetime="{{ item.datetime }}"
-                                          class="s-events__item-date">{{ item.date }}</time>
-                                </div>
+                                </article>
                             </li>
                         {% endfor %}
                     </ul>
