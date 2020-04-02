@@ -41,17 +41,14 @@
                         <span class="visually-hidden">Asamt</span>
                     </a>
                 </h1>
-                <h2 class="header-banner__partner">
+                <div class="header-banner__partner">
                     <a href="#" class="header-banner__partner-link">
-                        <svg class="el-icon">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#partner"></use>
-                        </svg>
+                        <img src="../../images/Img/partner.svg" alt="partner" class="header-banner__partner-logo">
                     </a>
-                </h2>
+                </div>
             </div>
             <form class="header-banner__search" method="get">
-                <input type="search" class="header-banner__search-input header-banner__search-input--{{ page }}"
-                       id="search"
+                <input type="search" class="header-banner__search-input header-banner__search-input--{{ page }}" id="search"
                        name="search" placeholder="I'm looking for...">
                 <button class="header-banner__search-btn" type="submit">{{ args.btn }}</button>
             </form>
