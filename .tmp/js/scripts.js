@@ -16,7 +16,7 @@ navWrap();
 
 function tabWrap() {
   var tabNav = Array.prototype.slice.call(document.querySelectorAll('.js-tab'));
-  var tabContents = document.querySelectorAll('.js-tab-content');
+  var tabContents = Array.prototype.slice.call(document.querySelectorAll('.js-tab-content'));
   var activeClass = 'is-active';
   tabNav.forEach(function (trigger) {
     trigger.addEventListener('click', function () {
