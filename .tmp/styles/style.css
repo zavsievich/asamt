@@ -1037,6 +1037,7 @@ a {
             justify-content: space-between;
     position: relative;
     border: 1px solid #E2E2E5;
+    background-color: #FFFFFF;
     -webkit-border-radius: 5px;
             border-radius: 5px;
     list-style-type: none;
