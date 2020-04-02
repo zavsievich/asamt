@@ -159,21 +159,6 @@
   @include media-breakpoint-up(xs) {
     margin-top: 30px;
 
-    .js-tab-content {
-      display: none;
-    }
-
-    .is-show {
-      display: block;
-    }
-
-    .is-active {
-      border-radius: 5px;
-      background-color: $c-switch-active;
-      color: $c-white;
-      z-index: 1;
-    }
-
     &__categories {
       flex-direction: column;
       align-items: center;
@@ -185,6 +170,21 @@
         margin: 3px;
         border-radius: 5px;
       }
+    }
+
+    &__categories-btn.is-active {
+      border-radius: 5px;
+      background-color: $c-switch-active;
+      color: $c-white;
+      z-index: 1;
+    }
+
+    &__content {
+      display: none;
+    }
+
+    &__content.is-active {
+      display: block;
     }
 
     &__list {
@@ -221,16 +221,6 @@
         width: 160px;
         padding: 14px 10px;
         margin: 0;
-
-        /*&:nth-child(2) {
-          border-top-right-radius: 0;
-          border-bottom-right-radius: 0;
-        }
-
-        &:nth-child(3) {
-          border-top-left-radius: 0;
-          border-bottom-left-radius: 0;
-        }*/
       }
     }
 
