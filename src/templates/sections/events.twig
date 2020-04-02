@@ -28,6 +28,7 @@
                     datetime : '2018-01-06',
                     date : 'June 1, 2018 19:00',
                     typeIcon : '#cup',
+                    link : 'admin.html',
                 },
                 {
                     type : 'board',
@@ -185,6 +186,7 @@
                     datetime : '2018-01-06',
                     date : 'June 1, 2018 19:00',
                     typeIcon : '#wins',
+                    link : 'admin.html',
                 },
                 {
                     type : 'glass',
@@ -302,6 +304,7 @@
                     datetime : '2018-01-06',
                     date : 'June 1, 2018 19:00',
                     typeIcon : '#cup',
+                    link : 'admin.html',
                 },
                 {
                     type : 'board',
@@ -353,8 +356,8 @@
                                     </div>
                                     <div class="s-events__item-description">
                                         <p class="s-events__item-text">{{ item.place }}</p>
-                                        <h3 class="s-events__item-title"><a class="s-events__item-link"
-                                                                            href="{{ item.link }}">{{ item.event }}</a>
+                                        <h3 class="s-events__item-title">
+                                            <a class="s-events__item-link" href="{{ item.link }}">{{ item.event }}</a>
                                         </h3>
                                     </div>
                                 </div>
@@ -371,70 +374,6 @@
                     </ul>
                 </section>
             {% endfor %}
-            {#<div class="s-events__content js-tab-content" data-tab="2">
-                <h3 style="text-align: center; margin-top: 50px;">Second Section</h3>
-                <ul class="s-events__list">
-                    {% for item in args.items %}
-                        <li class="s-events__item s-events__item--{{ item.type }}">
-                            <div class="s-events__item-wrap">
-                                <div class="s-events__item-picture">
-                                    <img src="{{ item.imgUrl }}" alt="{{ item.alt }}" class="s-events__item-img">
-                                    <div class="s-events__item-icon">
-                                        <svg class="el-icon">
-                                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                 xlink:href="{{ item.typeIcon }}"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="s-events__item-description">
-                                    <p class="s-events__item-text">{{ item.place }}</p>
-                                    <h3 class="s-events__item-title"><a class="s-events__item-link"
-                                                                        href="{{ item.link }}">{{ item.event }}</a></h3>
-                                </div>
-                            </div>
-                            <div class="s-events__item-day">
-                                <svg class="el-icon">
-                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                         xlink:href="#date"></use>
-                                </svg>
-                                <time datetime="{{ item.datetime }}" class="s-events__item-date">{{ item.date }}</time>
-                            </div>
-                        </li>
-                    {% endfor %}
-                </ul>
-            </div>
-            <div class="s-events__content js-tab-content" data-tab="3">
-                <h3 style="text-align: center; margin-top: 50px;">Third Section</h3>
-                <ul class="s-events__list">
-                    {% for item in args.items %}
-                        <li class="s-events__item s-events__item--{{ item.type }}">
-                            <div class="s-events__item-wrap">
-                                <div class="s-events__item-picture">
-                                    <img src="{{ item.imgUrl }}" alt="{{ item.alt }}" class="s-events__item-img">
-                                    <div class="s-events__item-icon">
-                                        <svg class="el-icon">
-                                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                 xlink:href="{{ item.typeIcon }}"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="s-events__item-description">
-                                    <p class="s-events__item-text">{{ item.place }}</p>
-                                    <h3 class="s-events__item-title"><a class="s-events__item-link"
-                                                                        href="{{ item.link }}">{{ item.event }}</a></h3>
-                                </div>
-                            </div>
-                            <div class="s-events__item-day">
-                                <svg class="el-icon">
-                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                         xlink:href="#date"></use>
-                                </svg>
-                                <time datetime="{{ item.datetime }}" class="s-events__item-date">{{ item.date }}</time>
-                            </div>
-                        </li>
-                    {% endfor %}
-                </ul>
-            </div>#}
         </div>
     </section>
 </main>
