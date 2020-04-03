@@ -1,0 +1,28 @@
+.c-card-new {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: $c-white;
+  height: 100%;
+  cursor: pointer;
+
+  &__add {
+    background-color: inherit;
+    border-radius: 50%;
+    border: 2px dashed #1D24AB;
+    color: #1d24ab;
+    padding: 10px;
+
+    svg {
+      height: 60px;
+      width: 60px;
+      padding: 17px;
+    }
+  }
+
+  &__title {
+    margin-top: 20px;
+  }
+}
