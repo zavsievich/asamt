@@ -1132,7 +1132,7 @@ a {
     -webkit-border-radius: 50%;
             border-radius: 50%;
     border: 2px dashed #1D24AB;
-    color: #1d24ab;
+    color: #1D24AB;
     padding: 10px;
     outline: none; }
     .c-card-new__add::before {
@@ -1265,39 +1265,35 @@ a {
     .s-events__item-day {
       font-size: 12px; }
   @media screen and (min-width: 650px) {
-    .s-events {
-      margin-top: 30px; }
-      .s-events__categories {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: row;
-            -ms-flex-direction: row;
-                flex-direction: row; }
-        .s-events__categories-btn {
-          width: 160px;
-          padding: 14px 10px;
-          margin: 0; }
-      .s-events__list {
-        margin-top: 30px;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: row;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -webkit-box-align: stretch;
-        -webkit-align-items: stretch;
-            -ms-flex-align: stretch;
-                align-items: stretch; }
-      .s-events__item {
-        max-width: 31.7%;
-        margin: 0.65%; } }
+    .s-events__categories {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+      .s-events__categories-btn {
+        width: 160px;
+        padding: 14px 10px;
+        margin: 0; }
+    .s-events__list {
+      margin-top: 30px;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-align: stretch;
+      -webkit-align-items: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch; }
+    .s-events__item {
+      max-width: 31.7%;
+      margin: 0.65%; } }
   @media screen and (min-width: 900px) {
-    .s-events {
+    .s-events__list {
       margin-top: 50px; }
-      .s-events__list {
-        margin-top: 50px; }
-      .s-events__item {
-        max-width: 23.5%; } }
+    .s-events__item {
+      max-width: 23.5%; } }
   @media screen and (min-width: 1200px) {
     .s-events__categories-btn {
       width: 179px;
@@ -1311,70 +1307,70 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
-  .user-aside {
+  .user-aside__list {
     width: 17%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     border: 1px solid #E2E2E5;
     background-color: #FFFFFF;
     -webkit-border-radius: 5px;
-            border-radius: 5px; }
-    .user-aside__list {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-justify-content: space-around;
-          -ms-flex-pack: distribute;
-              justify-content: space-around;
-      list-style: none;
-      height: 100%; }
-    .user-aside__item {
-      border-bottom: 1px solid rgba(183, 193, 203, 0.2);
-      margin-left: 20px; }
-      .user-aside__item:last-child {
-        border-bottom: none; }
-    .user-aside__btn {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
-      background-color: inherit;
-      border: none;
-      width: 100%;
-      position: relative;
-      padding: 5px 0;
+            border-radius: 5px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    list-style: none;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    cursor: pointer; }
+  .user-aside__item {
+    margin-left: 20px; }
+    .user-aside__item:last-child {
+      border-bottom: none; }
+  .user-aside__btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid rgba(183, 193, 203, 0.2);
+    width: 100%;
+    position: relative;
+    padding: 17px 0;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    color: #3E3934;
+    cursor: pointer; }
+    .user-aside__btn svg {
+      height: 20px;
+      width: 20px;
+      opacity: 0.5;
       -webkit-transition: .3s;
       -o-transition: .3s;
-      transition: .3s;
-      color: #3E3934; }
-      .user-aside__btn svg {
-        height: 20px;
-        width: 20px;
-        opacity: 0.5;
-        -webkit-transition: .3s;
-        -o-transition: .3s;
-        transition: .3s; }
-      .user-aside__btn-title {
-        font-size: 13px;
-        margin-left: 10px; }
-      .user-aside__btn::after {
-        content: "";
-        position: absolute;
-        background-image: url("../images/png_sprite/sprite.png");
-        background-position: -94px -51px;
-        width: 5px;
-        height: 8px;
-        right: 20px; }
-      .user-aside__btn:hover svg {
-        opacity: 1; }
+      transition: .3s; }
+    .user-aside__btn-title {
+      font-size: 13px;
+      margin-left: 10px; }
+    .user-aside__btn::after {
+      content: "";
+      position: absolute;
+      background-image: url("../images/png_sprite/sprite.png");
+      background-position: -94px -51px;
+      width: 5px;
+      height: 8px;
+      right: 20px; }
+    .user-aside__btn:hover svg {
+      opacity: 1; }
   .user-aside__btn.is-active {
     color: #FF8300; }
     .user-aside__btn.is-active svg {
@@ -1448,8 +1444,6 @@ a {
       max-width: 48.7%;
       margin: 0.65%; } }
   @media screen and (min-width: 900px) {
-    .user-edit__list {
-      margin-top: 50px; }
     .user-edit__item {
       max-width: 35.5%; } }
   @media screen and (min-width: 1200px) {

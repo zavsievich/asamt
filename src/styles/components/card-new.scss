@@ -16,8 +16,8 @@
   &__add {
     background-color: inherit;
     border-radius: 50%;
-    border: 2px dashed #1D24AB;
-    color: #1d24ab;
+    border: 2px dashed $c-switch-active;
+    color: $c-switch-active;
     padding: 10px;
     outline: none;
 
