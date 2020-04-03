@@ -983,7 +983,8 @@ a {
   -webkit-flex: 1 0 320px;
       -ms-flex: 1 0 320px;
           flex: 1 0 320px;
-  margin: 0.65%; }
+  margin: 0.65%;
+  margin-bottom: 0; }
   .c-card-link {
     outline: none; }
     .c-card-link::before {
@@ -1089,7 +1090,8 @@ a {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    height: 36px; }
+    height: 36px;
+    font-size: 14px; }
     .c-card-day svg {
       color: #FF8300;
       width: 20px;
@@ -1116,6 +1118,10 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  border: 1px solid #E2E2E5;
   background-color: #FFFFFF;
   height: 100%;
   cursor: pointer;
@@ -1141,6 +1147,8 @@ a {
       width: 60px;
       padding: 17px;
       padding-bottom: 10px; }
+  .c-card-new__title {
+    color: #FF8300; }
   .c-card-new:focus-within {
     -webkit-box-shadow: 0 0 0 0.2rem #FF8300;
             box-shadow: 0 0 0 0.2rem #FF8300; }
@@ -1304,7 +1312,7 @@ a {
   display: -ms-flexbox;
   display: flex; }
   .user-aside {
-    width: 29%;
+    width: 17%;
     border: 1px solid #E2E2E5;
     background-color: #FFFFFF;
     -webkit-border-radius: 5px;
@@ -1319,10 +1327,16 @@ a {
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
               flex-direction: column;
-      list-style: none; }
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+      list-style: none;
+      height: 100%; }
     .user-aside__item {
       border-bottom: 1px solid rgba(183, 193, 203, 0.2);
-      margin-left: 10px; }
+      margin-left: 20px; }
+      .user-aside__item:last-child {
+        border-bottom: none; }
     .user-aside__btn {
       display: -webkit-box;
       display: -webkit-flex;
@@ -1358,44 +1372,46 @@ a {
         background-position: -94px -51px;
         width: 5px;
         height: 8px;
-        right: 10px; }
+        right: 20px; }
       .user-aside__btn:hover svg {
         opacity: 1; }
   .user-aside__btn.is-active {
     color: #FF8300; }
     .user-aside__btn.is-active svg {
       opacity: 1; }
-  .user-edit__title {
-    margin: 0.65%; }
-  .user-edit__list {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-            justify-content: flex-start; }
-  .user-edit__item {
-    list-style-type: none;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+  .user-edit {
+    margin-left: 20px; }
+    .user-edit__title {
+      margin: 0.65%; }
+    .user-edit__list {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
+    .user-edit__item {
+      list-style-type: none;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
   .user-edit__list {
     margin-top: 30px;
     -webkit-box-orient: vertical;
@@ -1438,7 +1454,8 @@ a {
       max-width: 35.5%; } }
   @media screen and (min-width: 1200px) {
     .user-edit__item {
-      max-width: 35.5%; } }
+      max-width: 35.5%;
+      margin-bottom: 0; } }
 
 .visible {
   visibility: visible !important; }

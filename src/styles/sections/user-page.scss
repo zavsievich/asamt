@@ -3,7 +3,7 @@
   display: flex;
 
   &-aside {
-    width: 29%;
+    width: 17%;
     border: 1px solid $c-border;
     background-color: $c-white;
     border-radius: 5px;
@@ -11,12 +11,18 @@
     &__list {
       display: flex;
       flex-direction: column;
+      justify-content: space-around;
       list-style: none;
+      height: 100%;
     }
 
     &__item {
       border-bottom: 1px solid rgba(183, 193, 203, 0.2);
-      margin-left: 10px;
+      margin-left: 20px;
+
+      &:last-child {
+        border-bottom: none;
+      }
     }
 
     &__btn {
@@ -46,7 +52,7 @@
         content: "";
         position: absolute;
         @include png-sprite($icon-aside);
-        right: 10px;
+        right: 20px;
       }
 
       &:hover {
@@ -66,6 +72,8 @@
   }
 
   &-edit {
+
+    margin-left: 20px;
 
     &__title {
       margin: 0.65%;
@@ -144,6 +152,7 @@
     &-edit {
       &__item {
         max-width: 35.5%;
+        margin-bottom: 0;
       }
     }
   }

@@ -4,11 +4,14 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  transition: .3s;
+  border: 1px solid $c-border;
 
   background-color: $c-white;
   height: 100%;
   cursor: pointer;
   border-radius: 5px;
+
 
   &__add {
     background-color: inherit;
@@ -33,6 +36,10 @@
       padding: 17px;
       padding-bottom: 10px;
     }
+  }
+
+  &__title {
+    color: $c-brand;
   }
 
   &:focus-within {
