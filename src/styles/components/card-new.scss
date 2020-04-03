@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 
   background-color: $c-white;
   height: 100%;
@@ -14,12 +15,30 @@
     border: 2px dashed #1D24AB;
     color: #1d24ab;
     padding: 10px;
+    outline: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
 
     svg {
       height: 60px;
       width: 60px;
       padding: 17px;
     }
+  }
+
+  &:focus-within {
+    box-shadow: 0 0 0 0.2rem $c-brand;
+  }
+
+  &:focus-within a:focus {
+    text-decoration: none;
   }
 
   &__title {

@@ -1115,6 +1115,7 @@ a {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
   background-color: #FFFFFF;
   height: 100%;
   cursor: pointer; }
@@ -1124,11 +1125,24 @@ a {
             border-radius: 50%;
     border: 2px dashed #1D24AB;
     color: #1d24ab;
-    padding: 10px; }
+    padding: 10px;
+    outline: none; }
+    .c-card-new__add::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0; }
     .c-card-new__add svg {
       height: 60px;
       width: 60px;
       padding: 17px; }
+  .c-card-new:focus-within {
+    -webkit-box-shadow: 0 0 0 0.2rem #FF8300;
+            box-shadow: 0 0 0 0.2rem #FF8300; }
+  .c-card-new:focus-within a:focus {
+    text-decoration: none; }
   .c-card-new__title {
     margin-top: 20px; }
 
