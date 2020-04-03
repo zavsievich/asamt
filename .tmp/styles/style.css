@@ -1118,7 +1118,9 @@ a {
   position: relative;
   background-color: #FFFFFF;
   height: 100%;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+          border-radius: 5px; }
   .c-card-new__add {
     background-color: inherit;
     -webkit-border-radius: 50%;
@@ -1137,7 +1139,8 @@ a {
     .c-card-new__add svg {
       height: 60px;
       width: 60px;
-      padding: 17px; }
+      padding: 17px;
+      padding-bottom: 10px; }
   .c-card-new:focus-within {
     -webkit-box-shadow: 0 0 0 0.2rem #FF8300;
             box-shadow: 0 0 0 0.2rem #FF8300; }
@@ -1362,6 +1365,8 @@ a {
     color: #FF8300; }
     .user-aside__btn.is-active svg {
       opacity: 1; }
+  .user-edit__title {
+    margin: 0.65%; }
   .user-edit__list {
     display: -webkit-box;
     display: -webkit-flex;
