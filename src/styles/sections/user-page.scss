@@ -73,7 +73,9 @@
 
   &-edit {
 
-    margin-left: 20px;
+    &__wrap {
+      margin-left: 20px;
+    }
 
     &__title {
       margin: 0.65%;
