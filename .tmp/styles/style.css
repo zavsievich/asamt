@@ -1410,7 +1410,9 @@ a {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      max-width: 1000px;
+      max-height: 328px; }
   .user-aside__btn.is-active {
     color: #FF8300; }
     .user-aside__btn.is-active svg {

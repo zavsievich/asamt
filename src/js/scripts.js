@@ -35,3 +35,7 @@ function tabWrap() {
 }
 
 tabWrap();
+
+// Slick JQ
+
+$('.slick').slick();

@@ -33,4 +33,6 @@ function tabWrap() {
   });
 }
 
-tabWrap();
+tabWrap(); // Slick JQ
+
+$('.slick').slick();
