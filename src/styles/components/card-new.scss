@@ -20,6 +20,7 @@
     color: $c-switch-active;
     padding: 10px;
     outline: none;
+    cursor: pointer;
 
     &::before {
       content: "";

@@ -59,6 +59,50 @@
                 typeIcon : '#art',
             },
         ],
+
+        ready : [
+            {
+                type : 'glass',
+                imgUrl : 'images/img/festival-of-colours.jpg',
+                alt : 'Festival of colours',
+                place : 'Helsinki',
+                event : 'Festival of colours Armin van Buuren',
+                datetime : '2018-01-06',
+                date : 'June 1, 2018 19:00',
+                typeIcon : '#cup',
+                link : 'admin.html',
+            },
+            {
+                type : 'board',
+                imgUrl : 'images/img/art.jpg',
+                alt : 'Art',
+                place : 'Helsinki',
+                event : 'Contemporary Art Exhibition',
+                datetime : '2018-01-06',
+                date : 'June 1, 2018 19:00',
+                typeIcon : '#art',
+            },{
+                type : 'glass',
+                imgUrl : 'images/img/festival-of-colours.jpg',
+                alt : 'Festival of colours',
+                place : 'Helsinki',
+                event : 'Festival of colours Armin van Buuren',
+                datetime : '2018-01-06',
+                date : 'June 1, 2018 19:00',
+                typeIcon : '#cup',
+                link : 'admin.html',
+            },
+            {
+                type : 'board',
+                imgUrl : 'images/img/art.jpg',
+                alt : 'Art',
+                place : 'Helsinki',
+                event : 'Contemporary Art Exhibition',
+                datetime : '2018-01-06',
+                date : 'June 1, 2018 19:00',
+                typeIcon : '#art',
+            },
+        ],
     } %}
 {% endif %}
 
@@ -127,8 +171,48 @@
                         </li>
                     </ul>
                 </section>
-                <section class="ready-events">
-                        <h2 class="ready-events__title">Tidligere events</h2>
+                <section class="user-ready">
+                    <div class="user-ready__wrap">
+                        <h2 class="user-ready__title">Tidligere events</h2>
+                        <div class="user-reade__btn-wrap">
+                            <button class="user-ready__btn user-ready__btn--left">left</button>
+                            <button class="user-ready__btn user-ready__btn--left">right</button>
+                        </div>
+                    </div>
+                    <ul class="user-ready__list">
+                        {% for item in args.ready %}
+                            <li class="user-edit__item user-edit__item--{{ item.type }}">
+                                <article class="c-card">
+                                    <div class="c-card-wrap">
+                                        <div class="c-card-picture">
+                                            <img src="{{ item.imgUrl }}" alt="{{ item.alt }}"
+                                                 class="c-card-img">
+                                            <div class="c-card-icon">
+                                                <svg class="el-icon">
+                                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                         xlink:href="{{ item.typeIcon }}"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="c-card-description">
+                                            <p class="c-card-text">{{ item.place }}</p>
+                                            <h3 class="c-card-title">
+                                                <button class="c-card-btn">{{ item.event }}</button>
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="c-card-day">
+                                        <svg class="el-icon">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                 xlink:href="#date"></use>
+                                        </svg>
+                                        <time datetime="{{ item.datetime }}"
+                                              class="c-card-date">{{ item.date }}</time>
+                                    </div>
+                                </article>
+                            </li>
+                        {% endfor %}
+                    </ul>
                 </section>
             </div>
         </section>
