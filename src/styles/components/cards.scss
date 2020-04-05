@@ -11,6 +11,18 @@
   margin: 3px;
   margin-bottom: 0;
 
+  &:hover {
+    .c-card-day__edit-icon {
+      display: flex;
+    }
+  }
+
+  &:focus-within {
+    .c-card-day__edit-icon {
+      display: flex;
+    }
+  }
+
   &-link {
     outline: none;
 
@@ -120,11 +132,42 @@
     display: flex;
     height: 36px;
     font-size: 14px;
+    align-items: center;
+
+    /*&__wrap {
+
+      svg {
+        color: $c-brand;
+        width: 20px;
+        height: 16px;
+        margin-left: 10px;
+      }
+    }*/
 
     svg {
       color: $c-brand;
       width: 20px;
       margin-left: 10px;
+    }
+
+
+    &__edit-icon {
+      background-color: $c-brand;
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: 10px;
+      display: none;
+
+      svg {
+        height: 10px;
+        width: 10px;
+        color: $c-white;
+        margin: 0;
+      }
     }
   }
 

@@ -95,35 +95,6 @@
       justify-content: center;
       margin-right: 2px;
       position: relative;
-
-      &::after {
-        content: "";
-        position: absolute;
-        right: 20px;
-        bottom: 10px;
-        transform: translateY(-37%);
-        @include png-sprite($icon-pen);
-        z-index: 2;
-        display: none;
-      }
-
-      &::before {
-        content: "";
-        position: absolute;
-        height: 20px;
-        width: 20px;
-        border-radius: 50%;
-        background-color: $c-brand;
-        bottom: 10px;
-        right: 16px;
-        z-index: 2;
-        display: none;
-      }
-
-      &:hover::before,::after,
-      &:focus-within ::before,::after {
-        display: block;
-      }
     }
   }
 
