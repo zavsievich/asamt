@@ -1590,6 +1590,9 @@ a {
       .user-ready__btn:hover {
         background-color: #FF8300;
         color: #FFFFFF; }
+      .user-ready__btn:focus-within {
+        background-color: #FF8300;
+        color: #FFFFFF; }
     .user-ready__wrap {
       display: -webkit-box;
       display: -webkit-flex;
