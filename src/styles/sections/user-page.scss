@@ -1,9 +1,11 @@
 .user {
   margin-top: 60px;
   display: flex;
+  justify-content: center;
 
   &-aside {
     &__list {
+
       width: 20%;
       display: flex;
       border: 1px solid $c-border;
