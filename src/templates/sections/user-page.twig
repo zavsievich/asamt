@@ -178,7 +178,7 @@
                         </li>
                     </ul>
                 </section>
-                {#<section class="user-ready">
+                <section class="user-ready">
                     <div class="user-ready__wrap">
                         <h2 class="user-ready__title">Tidligere events</h2>
                         <div class="user-ready__wrap-btn">
@@ -198,7 +198,7 @@
                     </div>
                     <ul class="user-ready__list">
                         {% for item in args.ready %}
-                            <li class="user-edit__item  user-edit__item--{{ item.type }}">
+                            <li class="user-ready__item  user-ready__item--{{ item.type }}">
                                 <article class="c-card">
                                     <div class="c-card-wrap">
                                         <div class="c-card-picture">
@@ -230,7 +230,7 @@
                             </li>
                         {% endfor %}
                     </ul>
-                </section>#}
+                </section>
             </div>
         </section>
     </div>
