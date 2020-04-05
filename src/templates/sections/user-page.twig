@@ -66,7 +66,7 @@
                 imgUrl : 'images/img/festival-of-colours.jpg',
                 alt : 'Festival of colours',
                 place : 'Helsinki',
-                event : 'Festival of colours Armin van Buuren',
+                event : 'Festival of colours Armin',
                 datetime : '2018-01-06',
                 date : 'June 1, 2018 19:00',
                 typeIcon : '#cup',
@@ -81,12 +81,13 @@
                 datetime : '2018-01-06',
                 date : 'June 1, 2018 19:00',
                 typeIcon : '#art',
-            },{
+            },
+            {
                 type : 'glass',
                 imgUrl : 'images/img/festival-of-colours.jpg',
                 alt : 'Festival of colours',
                 place : 'Helsinki',
-                event : 'Festival of colours Armin van Buuren',
+                event : 'Festival of colours ArminFestival of colours ArminFestival',
                 datetime : '2018-01-06',
                 date : 'June 1, 2018 19:00',
                 typeIcon : '#cup',
@@ -148,12 +149,12 @@
                                         </div>
                                     </div>
                                     <div class="c-card-day">
-                                            <svg class="el-icon">
-                                                <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                     xlink:href="#date"></use>
-                                            </svg>
-                                            <time datetime="{{ item.datetime }}"
-                                                  class="c-card-date">{{ item.date }}</time>
+                                        <svg class="el-icon">
+                                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                 xlink:href="#date"></use>
+                                        </svg>
+                                        <time datetime="{{ item.datetime }}"
+                                              class="c-card-date">{{ item.date }}</time>
                                         <div class="c-card-day__edit-icon">
                                             <svg class="el-icon">
                                                 <use xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -177,7 +178,7 @@
                         </li>
                     </ul>
                 </section>
-                <section class="user-ready">
+                {#<section class="user-ready">
                     <div class="user-ready__wrap">
                         <h2 class="user-ready__title">Tidligere events</h2>
                         <div class="user-ready__wrap-btn">
@@ -229,7 +230,7 @@
                             </li>
                         {% endfor %}
                     </ul>
-                </section>
+                </section>#}
             </div>
         </section>
     </div>

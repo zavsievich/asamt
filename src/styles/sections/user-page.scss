@@ -4,7 +4,7 @@
 
   &-aside {
     &__list {
-      width: 17%;
+      width: 20%;
       display: flex;
       border: 1px solid $c-border;
       background-color: $c-white;
@@ -72,8 +72,6 @@
   }
 
   &-edit {
-    width: max-content;
-
     &__wrap {
       margin-left: 20px;
       position: relative;
@@ -96,7 +94,7 @@
     &__list {
       display: flex;
       flex-direction: row;
-      justify-content: flex-start;
+      flex-wrap: wrap;
     }
 
     &__item {
@@ -104,12 +102,31 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin-right: 2px;
+      margin: 1%;
       position: relative;
+      min-width: 30%;
+      max-width: 30%;
     }
   }
 
-  &-ready {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*&-ready {
     margin-top: 60px;
     margin-bottom: 60px;
 
@@ -169,19 +186,16 @@
 
     &__list {
       display: flex;
-      max-width: 1000px;
-      max-height: 328px;
     }
-  }
+  }*/
 
-
-  @include media-breakpoint-up(xs) {
+  /*@include media-breakpoint-up(xs) {
 
     &-edit {
       &__list {
-        margin-top: 30px;
+        !*margin-top: 30px;
         flex-direction: column;
-        align-items: center;
+        align-items: center;*!
       }
 
       &__item {
@@ -229,9 +243,10 @@
   @include media-breakpoint-up(xl) {
     &-edit {
       &__item {
-        max-width: 35.5%;
+        //max-width: 35.5%;
         margin-bottom: 0;
+        flex: 1 0 280px;
       }
     }
-  }
+  }*/
 }

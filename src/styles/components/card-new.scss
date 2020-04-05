@@ -6,13 +6,10 @@
   position: relative;
   transition: .3s;
   border: 1px solid $c-border;
-
   background-color: $c-white;
-  height: 100%;
   cursor: pointer;
   border-radius: 5px;
-  margin-left: 3px;
-
+  flex: 1 0 320px;
 
   &__add {
     background-color: inherit;
@@ -42,6 +39,9 @@
 
   &__title {
     color: $c-brand;
+    word-wrap: normal;
+    margin-top: 12px;
+    font-size: 18px;
   }
 
   &:focus-within {
@@ -50,9 +50,5 @@
 
   &:focus-within a:focus {
     text-decoration: none;
-  }
-
-  &__title {
-    margin-top: 20px;
   }
 }
