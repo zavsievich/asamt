@@ -26,6 +26,7 @@
 
       &:focus-within {
         box-shadow: 0 0 0 0.2rem $c-accent-focus;
+
         svg {
           opacity: 1;
         }
@@ -124,8 +125,6 @@
       justify-content: center;
       margin: 1%;
       position: relative;
-      /*min-width: 22%;
-      max-width: 22%;*/
 
       &:first-child {
         margin-left: 0;
@@ -205,16 +204,17 @@
       justify-content: center;
       margin: 1%;
       position: relative;
-      //max-width: 22%;
 
       &:first-child {
         margin-left: 0;
       }
     }
   }
+
   @include media-breakpoint-up(xs) {
 
     flex-direction: column;
+
     &-aside {
       &__list {
         width: 100%;
@@ -244,14 +244,19 @@
       }
     }
 
-    &-ready{
+    &-ready {
+      &__title {
+        &::after {
+          display: none;
+        }
+      }
 
       &__wrap-btn {
         margin-right: 0;
       }
+
       &__list {
         flex-direction: column;
-        justify-content: center;
         align-items: center;
       }
 
@@ -267,17 +272,113 @@
       &__list {
         flex-direction: row;
       }
+
+      &__item {
+        width: 32%;
+        margin: 0.65%;
+      }
+
+      &__title {
+        &::after {
+          display: block;
+          width: 69%;
+        }
+      }
+    }
+
+    &-ready {
+      &__title {
+        &::after {
+          display: block;
+          width: 60%;
+        }
+      }
+
+      &__wrap {
+        &-btn {
+          margin-right: 4%;
+        }
+      }
+
+      &__list {
+        flex-direction: row;
+      }
+
+      &__item {
+        width: 23%;
+        margin: 0.65%;
+      }
     }
   }
 
   @include media-breakpoint-up(lg) {
+    flex-direction: row;
+
+    &-aside {
+      &__list {
+        width: 30%;
+        margin-right: 20px;
+      }
+    }
+
+    &-edit {
+      &__title {
+        &::after {
+          display: block;
+          width: 72%;
+        }
+      }
+
+      &__wrap {
+        margin-top: 0;
+      }
+
+      &__item {
+        width: 27%;
+      }
+    }
+
+    &-ready {
+
+      &__title {
+        &::after {
+          display: block;
+          width: 65%;
+        }
+      }
+
+      &__item {
+        width: 23%;
+      }
+    }
 
   }
 
   @include media-breakpoint-up(xl) {
+
+    &-aside {
+      &__list {
+        width: 25%;
+      }
+    }
+
     &-edit {
       &__item {
-        margin-bottom: 0;
+        width: 23%;
+      }
+
+      &__title {
+        &::after {
+          width: 79%;
+        }
+      }
+    }
+
+    &-ready {
+      &__title {
+        &::after {
+          width: 74%;
+        }
       }
     }
   }
