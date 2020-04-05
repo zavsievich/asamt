@@ -1438,66 +1438,6 @@ a {
     &__list {
       display: flex;
     }
-  }*/
-  /*@include media-breakpoint-up(xs) {
-
-    &-edit {
-      &__list {
-        !*margin-top: 30px;
-        flex-direction: column;
-        align-items: center;*!
-      }
-
-      &__item {
-        width: 30%;
-        margin-bottom: 20px;
-
-        &-text {
-          font-size: 14px;
-        }
-
-        &-title {
-          font-size: 18px;
-        }
-
-        &-day {
-          font-size: 12px;
-        }
-      }
-    }
-  }
-
-  @include media-breakpoint-up(md) {
-    &-edit {
-      &__list {
-        margin-top: 30px;
-        flex-direction: row;
-        align-items: stretch;
-      }
-
-      &__item {
-        max-width: 48.7%;
-      }
-    }
-  }
-
-  @include media-breakpoint-up(lg) {
-    &-edit {
-
-      &__item {
-        max-width: 35.5%;
-      }
-    }
-  }
-
-  @include media-breakpoint-up(xl) {
-    &-edit {
-      &__item {
-        //max-width: 35.5%;
-        margin-bottom: 0;
-        flex: 1 0 280px;
-      }
-    }
   }*/ }
   .user-aside__list {
     width: 20%;
@@ -1592,7 +1532,8 @@ a {
             flex-direction: row;
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
+            flex-wrap: wrap;
+    margin-top: 30px; }
   .user-edit__item {
     list-style-type: none;
     display: -webkit-box;
@@ -1612,6 +1553,30 @@ a {
     position: relative;
     min-width: 30%;
     max-width: 30%; }
+  .user-edit__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .user-edit__item {
+    width: 30%;
+    margin-bottom: 20px; }
+  @media screen and (min-width: 650px) {
+    .user-edit__list {
+      margin-top: 30px;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
+  @media screen and (min-width: 1200px) {
+    .user-edit__item {
+      margin-bottom: 0; } }
 
 .visible {
   visibility: visible !important; }

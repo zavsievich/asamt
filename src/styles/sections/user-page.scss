@@ -95,6 +95,7 @@
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      margin-top: 30px;
     }
 
     &__item {
@@ -188,31 +189,17 @@
       display: flex;
     }
   }*/
-
-  /*@include media-breakpoint-up(xs) {
+  @include media-breakpoint-up(xs) {
 
     &-edit {
       &__list {
-        !*margin-top: 30px;
         flex-direction: column;
-        align-items: center;*!
+        align-items: center;
       }
 
       &__item {
         width: 30%;
         margin-bottom: 20px;
-
-        &-text {
-          font-size: 14px;
-        }
-
-        &-title {
-          font-size: 18px;
-        }
-
-        &-day {
-          font-size: 12px;
-        }
       }
     }
   }
@@ -222,31 +209,19 @@
       &__list {
         margin-top: 30px;
         flex-direction: row;
-        align-items: stretch;
-      }
-
-      &__item {
-        max-width: 48.7%;
       }
     }
   }
 
   @include media-breakpoint-up(lg) {
-    &-edit {
-
-      &__item {
-        max-width: 35.5%;
-      }
-    }
+    
   }
 
   @include media-breakpoint-up(xl) {
     &-edit {
       &__item {
-        //max-width: 35.5%;
         margin-bottom: 0;
-        flex: 1 0 280px;
       }
     }
-  }*/
+  }
 }
