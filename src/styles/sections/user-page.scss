@@ -124,8 +124,8 @@
       justify-content: center;
       margin: 1%;
       position: relative;
-      min-width: 22%;
-      max-width: 22%;
+      /*min-width: 22%;
+      max-width: 22%;*/
 
       &:first-child {
         margin-left: 0;
@@ -205,7 +205,7 @@
       justify-content: center;
       margin: 1%;
       position: relative;
-      max-width: 22%;
+      //max-width: 22%;
 
       &:first-child {
         margin-left: 0;
@@ -214,15 +214,50 @@
   }
   @include media-breakpoint-up(xs) {
 
+    flex-direction: column;
+    &-aside {
+      &__list {
+        width: 100%;
+      }
+    }
+
     &-edit {
+      &__wrap {
+        margin: 30px 0 0 0;
+      }
+
+      &__title {
+
+        &::after {
+          display: none;
+        }
+      }
+
       &__list {
         flex-direction: column;
         align-items: center;
       }
 
       &__item {
-        width: 30%;
-        margin-bottom: 20px;
+        width: 100%;
+        margin: 0 0 20px 0;
+      }
+    }
+
+    &-ready{
+
+      &__wrap-btn {
+        margin-right: 0;
+      }
+      &__list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &__item {
+        width: 100%;
+        margin: 0 0 20px 0;
       }
     }
   }
