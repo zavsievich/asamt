@@ -1439,38 +1439,36 @@ a {
       -webkit-justify-content: center;
           -ms-flex-pack: center;
               justify-content: center;
-      margin-right: 2px; }
-      .user-edit__item .c-card-day {
-        position: relative; }
-        .user-edit__item .c-card-day::after {
-          content: "";
-          position: absolute;
-          right: 20px;
-          top: 50%;
-          -webkit-transform: translateY(-50%);
-              -ms-transform: translateY(-50%);
-                  transform: translateY(-50%);
-          background-image: url("../images/png_sprite/sprite.png");
-          background-position: -43px -41px;
-          width: 11px;
-          height: 11px;
-          display: none; }
-        .user-edit__item .c-card-day::before {
-          content: "";
-          position: absolute;
-          height: 20px;
-          width: 20px;
-          -webkit-border-radius: 50%;
-                  border-radius: 50%;
-          background-color: #FF8300;
-          top: 50%;
-          -webkit-transform: translateY(-50%);
-              -ms-transform: translateY(-50%);
-                  transform: translateY(-50%);
-          right: 16px;
-          display: none; }
-      .user-edit__item:hover .c-card-day::before, .user-edit__item .c-card-day::after,
-      .user-edit__item:focus-within .c-card-day::before, .user-edit__item .c-card-day::after {
+      margin-right: 2px;
+      position: relative; }
+      .user-edit__item::after {
+        content: "";
+        position: absolute;
+        right: 20px;
+        bottom: 10px;
+        -webkit-transform: translateY(-37%);
+            -ms-transform: translateY(-37%);
+                transform: translateY(-37%);
+        background-image: url("../images/png_sprite/sprite.png");
+        background-position: -43px -41px;
+        width: 11px;
+        height: 11px;
+        z-index: 2;
+        display: none; }
+      .user-edit__item::before {
+        content: "";
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        -webkit-border-radius: 50%;
+                border-radius: 50%;
+        background-color: #FF8300;
+        bottom: 10px;
+        right: 16px;
+        z-index: 2;
+        display: none; }
+      .user-edit__item:hover::before, .user-edit__item ::after,
+      .user-edit__item:focus-within ::before, .user-edit__item ::after {
         display: block; }
   .user-ready {
     margin-top: 60px;
