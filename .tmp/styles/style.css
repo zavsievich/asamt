@@ -1398,9 +1398,18 @@ a {
     height: max-content;
     cursor: pointer; }
   .user-aside__item {
-    margin-left: 20px; }
+    padding-left: 20px;
+    position: relative;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
     .user-aside__item:last-child {
       border-bottom: none; }
+    .user-aside__item:focus-within {
+      -webkit-box-shadow: 0 0 0 0.2rem #007dfa;
+              box-shadow: 0 0 0 0.2rem #007dfa; }
+      .user-aside__item:focus-within svg {
+        opacity: 1; }
   .user-aside__btn {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1414,14 +1423,21 @@ a {
     border: none;
     border-bottom: 1px solid rgba(183, 193, 203, 0.2);
     width: 100%;
-    position: relative;
-    padding: 12px 0;
+    padding: 14px 0;
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s;
     color: #3E3934;
     cursor: pointer;
-    font-weight: bold; }
+    font-weight: bold;
+    outline: none; }
+    .user-aside__btn::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0; }
     .user-aside__btn svg {
       height: 20px;
       width: 20px;
@@ -1455,7 +1471,7 @@ a {
       content: "";
       position: absolute;
       height: 1px;
-      width: 81%;
+      width: 82%;
       background-color: rgba(0, 0, 0, 0.1);
       top: 16px;
       right: 0; }
@@ -1492,11 +1508,12 @@ a {
     position: relative;
     min-width: 22%;
     max-width: 22%; }
+    .user-edit__item:first-child {
+      margin-left: 0; }
   .user-ready {
     margin-top: 60px;
     margin-bottom: 60px; }
     .user-ready__title {
-      margin: 10px;
       position: relative;
       width: 100%; }
       .user-ready__title::after {
@@ -1511,7 +1528,8 @@ a {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      margin-right: 68px; }
     .user-ready__btn {
       -webkit-border-radius: 50%;
               border-radius: 50%;
@@ -1587,6 +1605,8 @@ a {
       margin: 1%;
       position: relative;
       max-width: 22%; }
+      .user-ready__item:first-child {
+        margin-left: 0; }
   .user-edit__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
