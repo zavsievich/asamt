@@ -1223,7 +1223,10 @@ a {
     color: #1D24AB;
     padding: 10px;
     outline: none;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
     .c-card-new__add::before {
       content: "";
       position: absolute;
@@ -1235,15 +1238,31 @@ a {
       height: 60px;
       width: 60px;
       padding: 17px;
-      padding-bottom: 10px; }
+      padding-bottom: 10px;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
   .c-card-new__title {
     color: #FF8300;
     word-wrap: normal;
     margin-top: 12px;
-    font-size: 18px; }
+    font-size: 18px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+  .c-card-new:hover .c-card-new__add {
+    border: 4px solid #1D24AB; }
+  .c-card-new:hover svg {
+    height: 62px;
+    width: 62px; }
   .c-card-new:focus-within {
     -webkit-box-shadow: 0 0 0 0.2rem #FF8300;
             box-shadow: 0 0 0 0.2rem #FF8300; }
+    .c-card-new:focus-within .c-card-new__add {
+      border: 4px solid #1D24AB; }
+    .c-card-new:focus-within svg {
+      height: 62px;
+      width: 62px; }
   .c-card-new:focus-within a:focus {
     text-decoration: none; }
 

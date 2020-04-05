@@ -219,7 +219,6 @@
   }
 
   @include media-breakpoint-up(xs) {
-
     flex-direction: column;
 
     &-aside {
@@ -234,7 +233,6 @@
       }
 
       &__title {
-
         &::after {
           display: none;
         }
@@ -358,11 +356,9 @@
         width: 23%;
       }
     }
-
   }
 
   @include media-breakpoint-up(xl) {
-
     &-aside {
       &__list {
         width: 25%;
