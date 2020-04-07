@@ -60,11 +60,20 @@
         width: 80%;
         line-height: 19px;
         color: $c-text-input;
-        border: 2px solid $c-brand;
+        border: 2px solid $c-border-button;
         border-radius: 5px;
         border-right: none;
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
+        transition: .3s;
+
+        &:hover {
+          border-color: $c-brand;
+        }
+
+        &:focus {
+          border-color: $c-brand;
+        }
 
         &--admin {
           border-color: $c-border-grey;

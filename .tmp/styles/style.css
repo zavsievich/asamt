@@ -636,14 +636,21 @@ a {
       width: 80%;
       line-height: 19px;
       color: #00006f;
-      border: 2px solid #FF8300;
+      border: 2px solid #D5D5D5;
       -webkit-border-radius: 5px;
               border-radius: 5px;
       border-right: none;
       -webkit-border-top-right-radius: 0;
               border-top-right-radius: 0;
       -webkit-border-bottom-right-radius: 0;
-              border-bottom-right-radius: 0; }
+              border-bottom-right-radius: 0;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+      .header-banner__search-input:hover {
+        border-color: #FF8300; }
+      .header-banner__search-input:focus {
+        border-color: #FF8300; }
       .header-banner__search-input--admin {
         border-color: #DCDCDC; }
     .header-banner__search-btn {
