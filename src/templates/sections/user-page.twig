@@ -1,9 +1,13 @@
 {% if not args %}
     {% set args = {
-        title : 'Ongoing events',
+        userEditTitle : 'Ongoing events',
+        userReadyTitle : 'Tidligere events',
+        newCardIcon : 'plus',
+        newCardTitle : 'New card',
+        leftBtnSlider : 'left',
+        rightBtnSlider : 'right',
 
         items : [
-
             {
                 icon: 'profil',
                 category : 'Profil',
@@ -33,9 +37,7 @@
                 icon: 'support',
                 category : 'Support',
             },
-
         ],
-
         cards : [
             {
                 type : 'glass',
@@ -59,7 +61,6 @@
                 typeIcon : '#art',
             },
         ],
-
         ready : [
             {
                 type : 'glass',
@@ -125,7 +126,7 @@
             </ul>
             <div class="user-edit__wrap">
                 <section class="user-edit">
-                    <h2 class="user-edit__title">{{ args.title }}</h2>
+                    <h2 class="user-edit__title">{{ args.userEditTitle }}</h2>
                     <ul class="user-edit__list">
                         {% for item in args.cards %}
                             <li class="user-edit__item user-edit__item--{{ item.type }}">
@@ -170,28 +171,28 @@
                                 <button class="c-card-new__add">
                                     <svg class="el-icon">
                                         <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                             xlink:href="#plus"></use>
+                                             xlink:href="#{{ args.newCardIcon }}"></use>
                                     </svg>
                                 </button>
-                                <h3 class="c-card-new__title">Legg till arrangement</h3>
+                                <h3 class="c-card-new__title">{{ args.newCardTitle }}</h3>
                             </article>
                         </li>
                     </ul>
                 </section>
                 <section class="user-ready">
                     <div class="user-ready__wrap">
-                        <h2 class="user-ready__title">Tidligere events</h2>
+                        <h2 class="user-ready__title">{{ args.userReadyTitle }}</h2>
                         <div class="user-ready__wrap-btn">
                             <button class="user-ready__btn user-ready__btn--left">
                                 <svg class="el-icon">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                         xlink:href="#left"></use>
+                                         xlink:href="#{{ args.leftBtnSlider }}"></use>
                                 </svg>
                             </button>
                             <button class="user-ready__btn user-ready__btn--right">
                                 <svg class="el-icon">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                         xlink:href="#right"></use>
+                                         xlink:href="#{{ args.rightBtnSlider }}"></use>
                                 </svg>
                             </button>
                         </div>
