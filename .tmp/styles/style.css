@@ -1069,6 +1069,8 @@ a {
       margin-right: 30px; }
     .header-banner__partner {
       margin-left: 30px; }
+    .header-banner__search {
+      margin-right: -50px; }
     .header-banner__user {
       font-size: 16px;
       max-width: 190px; }
