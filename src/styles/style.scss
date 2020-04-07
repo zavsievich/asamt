@@ -11,6 +11,9 @@
 // Mixins
 @import "__mixins";
 
+// Libraries
+@import "libraries/slick";
+
 // Base
 @import "base/reset";
 @import "base/layout";

@@ -109,6 +109,7 @@
         background-color: rgba(0, 0, 0, 0.1);
         top: 16px;
         right: 0;
+        right: 0;
       }
     }
 
@@ -161,7 +162,7 @@
       border-radius: 50%;
       border: none;
       background-color: $c-white;
-      display: flex;
+      display: flex !important;
       justify-content: center;
       align-items: center;
       padding: 10px;

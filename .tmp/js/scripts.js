@@ -50,4 +50,11 @@ function activeBtn() {
 
 activeBtn(); // Slick JQ
 
-$('.slick').slick();
+$('.js-slider').slick({
+  infinite: true,
+  slidesToShow: 8,
+  slidesToScroll: 1,
+  arrows: true,
+  prevArrow: $('.js-arrow-prev'),
+  nextArrow: $('.js-arrow-next')
+});
