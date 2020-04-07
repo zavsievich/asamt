@@ -16,7 +16,6 @@ navWrap();
 
 function tabWrap() {
   var tabNav = Array.prototype.slice.call(document.querySelectorAll('.js-tab'));
-  var tabContents = Array.prototype.slice.call(document.querySelectorAll('.js-tab-content'));
   var activeClass = 'is-active';
   tabNav.forEach(function (trigger) {
     trigger.addEventListener('click', function () {
@@ -35,17 +34,17 @@ function tabWrap() {
 
 tabWrap();
 
-function activeBtn() {
+function activateItem() {
   var asideList = Array.prototype.slice.call(document.querySelectorAll('.js-aside'));
+  var activeClass = 'is-active';
   asideList.forEach(function (item) {
-    item.addEventListener('click', activeBtn);
+    item.addEventListener('click', function activateBtn() {
+      console.log('click');
+      var activeBtn = document.querySelector('.js-aside.' + activeClass);
+      activeBtn.classList.remove('is-active');
+      item.classList.add('is-active');
+    });
   });
-
-  function activeBtn() {
-    console.log('click');
-  } // const activeBtn = document.querySelectorAll('.is-active');
-  // asideList.addEventListener('click', activeBtn);
-
 }
 
-activeBtn();
+activateItem();
