@@ -36,6 +36,27 @@ function tabWrap() {
 
 tabWrap();
 
+function activeBtn () {
+    const asideList =  Array.prototype.slice.call(document.querySelectorAll('.js-aside'));
+
+    asideList.forEach(function (item) {
+        item.addEventListener('click', activeBtn);
+    });
+
+    function activeBtn() {
+        console.log('click');
+    }
+
+    // const activeBtn = document.querySelectorAll('.is-active');
+    // asideList.addEventListener('click', activeBtn);
+}
+
+activeBtn();
+
+
+
+
+
 // Slick JQ
 
 $('.slick').slick();

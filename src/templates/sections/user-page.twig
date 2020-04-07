@@ -6,7 +6,6 @@
         newCardTitle : 'New card',
         leftBtnSlider : 'left',
         rightBtnSlider : 'right',
-
         items : [
             {
                 icon: 'profil',
@@ -114,7 +113,7 @@
             <ul class="user-aside__list">
                 {% for item in args.items %}
                     <li class="user-aside__item">
-                        <button class="user-aside__btn {{ item.state }}">
+                        <button class="user-aside__btn js-aside {{ item.state }}">
                             <svg class="el-icon">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink"
                                      xlink:href="#{{ item.icon }}"></use>
