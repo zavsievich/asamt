@@ -8,7 +8,6 @@ function navWrap() {
   function toggleNav() {
     btnNav.classList.toggle('is-open');
     navList.classList.toggle('is-on');
-    console.log(btnNav);
   }
 }
 
@@ -23,7 +22,6 @@ function tabWrap() {
       var content = document.querySelector('.js-tab-content[data-tab="' + id + '"]');
       var activeTrigger = document.querySelector('.js-tab.' + activeClass);
       var activeContent = document.querySelector('.js-tab-content.' + activeClass);
-      console.log(tabNav);
       activeTrigger.classList.remove('is-active');
       trigger.classList.add('is-active');
       activeContent.classList.remove('is-active');
@@ -39,7 +37,6 @@ function activateItem() {
   var activeClass = 'is-active';
   asideList.forEach(function (item) {
     item.addEventListener('click', function activateBtn() {
-      console.log('click');
       var activeBtn = document.querySelector('.js-aside.' + activeClass);
       activeBtn.classList.remove('is-active');
       item.classList.add('is-active');

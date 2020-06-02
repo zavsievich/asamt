@@ -7,7 +7,6 @@ function navWrap() {
     function toggleNav() {
         btnNav.classList.toggle('is-open');
         navList.classList.toggle('is-on');
-        console.log(btnNav);
     }
 }
 
@@ -23,7 +22,6 @@ function tabWrap() {
             const content = document.querySelector('.js-tab-content[data-tab="' + id + '"]');
             const activeTrigger = document.querySelector('.js-tab.' + activeClass);
             const activeContent = document.querySelector('.js-tab-content.' + activeClass);
-            console.log(tabNav);
             activeTrigger.classList.remove('is-active');
             trigger.classList.add('is-active');
 
@@ -41,7 +39,6 @@ function activateItem() {
 
     asideList.forEach(function (item) {
         item.addEventListener('click', function activateBtn() {
-            console.log('click');
             const activeBtn = document.querySelector('.js-aside.' + activeClass);
 
             activeBtn.classList.remove('is-active');
